@@ -1,0 +1,39 @@
+onerror {resume}
+quietly WaveActivateNextPane {} 0
+add wave -noupdate -divider {Clock and Reset}
+add wave -noupdate /testbench/clk
+add wave -noupdate /testbench/rst_n
+add wave -noupdate -divider {DPU <0,0> - Outputs (MOST IMPORTANT)}
+add wave -noupdate -radix decimal /testbench/DUT/MTRF_COLS(0)/MTRF_ROWS(0)/if_drra_top_l_corner/Silago_top_l_corner_inst/SILEGO_cell/MTRF_cell/dpu_gen/dpu_out_0
+add wave -noupdate -radix decimal /testbench/DUT/MTRF_COLS(0)/MTRF_ROWS(0)/if_drra_top_l_corner/Silago_top_l_corner_inst/SILEGO_cell/MTRF_cell/dpu_gen/dpu_out_1
+add wave -noupdate -divider {DPU <0,0> - Inputs}
+add wave -noupdate -radix decimal /testbench/DUT/MTRF_COLS(0)/MTRF_ROWS(0)/if_drra_top_l_corner/Silago_top_l_corner_inst/SILEGO_cell/MTRF_cell/dpu_gen/dpu_in_0
+add wave -noupdate -radix decimal /testbench/DUT/MTRF_COLS(0)/MTRF_ROWS(0)/if_drra_top_l_corner/Silago_top_l_corner_inst/SILEGO_cell/MTRF_cell/dpu_gen/dpu_in_1
+add wave -noupdate -radix decimal /testbench/DUT/MTRF_COLS(0)/MTRF_ROWS(0)/if_drra_top_l_corner/Silago_top_l_corner_inst/SILEGO_cell/MTRF_cell/dpu_gen/dpu_in_2
+add wave -noupdate -radix decimal /testbench/DUT/MTRF_COLS(0)/MTRF_ROWS(0)/if_drra_top_l_corner/Silago_top_l_corner_inst/SILEGO_cell/MTRF_cell/dpu_gen/dpu_in_3
+add wave -noupdate -divider {MTRF Cell <0,0> - Output Ports}
+add wave -noupdate -radix decimal /testbench/DUT/MTRF_COLS(0)/MTRF_ROWS(0)/if_drra_top_l_corner/Silago_top_l_corner_inst/SILEGO_cell/MTRF_cell/dpu_out_0_left
+add wave -noupdate -radix decimal /testbench/DUT/MTRF_COLS(0)/MTRF_ROWS(0)/if_drra_top_l_corner/Silago_top_l_corner_inst/SILEGO_cell/MTRF_cell/dpu_out_1_left
+add wave -noupdate -divider {Testbench Control}
+add wave -noupdate /testbench/instr_load
+add wave -noupdate -radix hexadecimal /testbench/instr_input
+add wave -noupdate -radix binary /testbench/seq_address_rb
+add wave -noupdate -radix binary /testbench/seq_address_cb
+TreeUpdate [SetDefaultTree]
+WaveRestoreCursors {{Cursor 1} {0 ns} 0}
+quietly wave cursor active 0
+configure wave -namecolwidth 250
+configure wave -valuecolwidth 100
+configure wave -justifyvalue left
+configure wave -signalnamewidth 1
+configure wave -snapdistance 10
+configure wave -datasetprefix 0
+configure wave -rowmargin 4
+configure wave -childrowmargin 2
+configure wave -gridoffset 0
+configure wave -gridperiod 1
+configure wave -griddelta 40
+configure wave -timeline 0
+configure wave -timelineunits ns
+update
+WaveRestoreZoom {0 ns} {1050 ns}
