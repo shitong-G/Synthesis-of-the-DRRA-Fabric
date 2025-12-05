@@ -1,0 +1,166 @@
+m255
+K4
+z2
+!s11f MIXED_VERSIONS
+!s11e vcom 2022.4 2022.10, Oct 18 2022
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/____KTH____/IL2225/Project/Synthesis-of-the-DRRA-Fabric/SiLagoNN/rtl
+Edw01_add
+Z1 w1764763112
+Z2 DPx4 ieee 11 numeric_std 0 22 F8@]:i<mFK7<TjIzKcTGi0
+Z3 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z4 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+!i122 1
+R0
+Z5 8DW/DW01_add.vhd
+Z6 FDW/DW01_add.vhd
+l0
+L72 1
+V6]5ZFg9WJz7RNlgS^j`5T1
+!s100 ]15n2UW0b_8oTci<56JV]2
+Z7 OL;C;2022.4;75
+33
+Z8 !s110 1764949058
+!i10b 1
+Z9 !s108 1764949058.000000
+Z10 !s90 -reportprogress|300|-work|dware|-2008|DW/DW01_add.vhd|
+Z11 !s107 DW/DW01_add.vhd|
+!i113 0
+Z12 o-work dware -2008
+Z13 tExplicit 1 CvgOpt 0
+Asim
+R2
+R3
+R4
+DEx4 work 8 dw01_add 0 22 6]5ZFg9WJz7RNlgS^j`5T1
+!i122 1
+l90
+L86 13
+V>R_FE]HkBYP8=EKeze[Y31
+!s100 1N4BD:RkW4VT`=IPIUHDB2
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+vDW_div
+Z14 !s110 1764949059
+!i10b 1
+!s100 lDP:Rg9nV]6:F`P=]hU?[0
+I^>k_lB2m1ggjRRlhinF<L0
+R0
+R1
+8DW/DW_div.v
+FDW/DW_div.v
+FDW/DW_div_function.inc
+!i122 4
+L0 35 402
+Z15 VDg1SIo80bB@j0V0VzS_@n1
+Z16 OL;L;2022.4;75
+r1
+!s85 0
+31
+Z17 !s108 1764949059.000000
+!s107 DW/DW_div_function.inc|DW/DW_div.v|
+!s90 -reportprogress|300|-work|dware|DW/DW_div.v|
+!i113 0
+Z18 o-work dware -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z19 tCvgOpt 0
+n@d@w_div
+vDW_div_pipe
+R14
+!i10b 1
+!s100 Pl:R_;=m;M^PfWKHXW77_0
+II9ECf=@DPfbR30k9M=_6>3
+R0
+R1
+8DW/DW_div_pipe.v
+FDW/DW_div_pipe.v
+!i122 5
+L0 99 272
+R15
+R16
+r1
+!s85 0
+31
+R17
+!s107 DW/DW_div_pipe.v|
+!s90 -reportprogress|300|-work|dware|DW/DW_div_pipe.v|
+!i113 0
+R18
+R19
+n@d@w_div_pipe
+Pdw_foundation_comp
+R3
+R4
+!i122 2
+R1
+R0
+8DW/DW_foundation_comp.vhd
+FDW/DW_foundation_comp.vhd
+l0
+L68 16
+V]=de@gC^kB9SCO[g<3j2@3
+!s100 NTa?65[dE[dAZ5`7T8VNS3
+R7
+33
+R14
+!i10b 1
+R17
+!s90 -reportprogress|300|-work|dware|-2008|DW/DW_foundation_comp.vhd|
+!s107 DW/DW_foundation_comp.vhd|
+!i113 0
+R12
+R13
+Pdw_foundation_comp_arith
+R3
+R4
+!i122 3
+R1
+R0
+8DW/DW_Foundation_comp_arith.vhd
+FDW/DW_Foundation_comp_arith.vhd
+l0
+L68 42
+VM;?m2mmY`V4f77ZVR2]4@2
+!s100 QB<EZXkNWbIh6_HkCB>WA1
+R7
+33
+R14
+!i10b 1
+R17
+!s90 -reportprogress|300|-work|dware|-2008|DW/DW_Foundation_comp_arith.vhd|
+!s107 DW/DW_Foundation_comp_arith.vhd|
+!i113 0
+R12
+R13
+Pdwpackages
+!i122 0
+R1
+R0
+8DW/DWpackages.vhd
+FDW/DWpackages.vhd
+l0
+L3 3
+V^22LfSa[PiOAa3Hh25]=z1
+!s100 ODNJPHAmJ[^FNi[0b_8l=0
+R7
+33
+R8
+!i10b 1
+R9
+!s90 -reportprogress|300|-work|dware|-2008|DW/DWpackages.vhd|
+!s107 DW/DWpackages.vhd|
+!i113 0
+R12
+R13
