@@ -1,11 +1,18 @@
-#1. source global variables
-#2. source design variables
+#1. Read MMMC file
+read_mmmc ${MMMC_FILE}
 
-set_multi_cpu_usage -local_cpu ${NUM_CPUS} -cpu_per_remote_host 1 -remote_host 0 -keep_license true
-set_distributed_hosts -local
-#3. set vdd net
-#4. set vss net
-#5. read mmmc file
-#6. read lef 
-#7. read logic synthesis netlist
+#2. Read LEF file
+read_physical -lef ${LEF_FILE}
+
+#3. Read logic synthesis netlist
+read_netlist ${NETLIST_FILE}
+
+#4. Initialize design
 init_design
+
+#5. Read SDC constraints (if available)
+if {[file exists ${SDC_FILES}]} {
+    read_sdc ${SDC_FILES}
+} else {
+    puts "Warning: SDC file not found: ${SDC_FILES}"
+}

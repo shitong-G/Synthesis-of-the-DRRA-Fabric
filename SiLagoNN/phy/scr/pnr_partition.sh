@@ -14,6 +14,7 @@ do
 	cd ${partition}.dat
 	rm -rf pnr 
 	mkdir pnr 
+	# Innovus -log with 3 arguments creates .log, .cmd, and .logv files
 	nohup innovus -stylus -no_gui -batch -files ../../../scr/pnr_partition.tcl -log "../../../../log/pnr_${filename}_${TIMESTAMP}.log ../../../../log/pnr_part_${filename}_${TIMESTAMP}.cmd ../../../../log/pnr_part_${filename}_${TIMESTAMP}.logv" &
 	cd ../../../../exe
 done
