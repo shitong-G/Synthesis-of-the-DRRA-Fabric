@@ -9,16 +9,12 @@ set SCR_DIR    "../phy/scr"
 #we need a part directory where partitions are created
 set PART_DIR   "../phy/db/part"
 # Source directory - check multiple possible locations
-# Priority: flat_db_20ns (flat synthesis), task2, task3 (bottom-up)
-if {[file exists "../syn/flat_db_20ns"]} {
-    set SRC_DIR    "../syn/flat_db_20ns"
-} elseif {[file exists "../syn/db/task2"]} {
-    set SRC_DIR    "../syn/db/task2"
-} elseif {[file exists "../syn/db/task3"]} {
-    set SRC_DIR    "../syn/db/task3"
+# Priority: flat_db_10ns (flat synthesis), task2, task3 (bottom-up)
+if {[file exists "../syn/flat_db_10ns"]} {
+    set SRC_DIR    "../syn/flat_db_10ns"
 } else {
     # Default fallback
-    set SRC_DIR    "../syn/flat_db_10ns"
+    set SRC_DIR    "../syn/db/bottom_up_20ns"
     puts "Warning: Using default SRC_DIR: $SRC_DIR (may not exist)"
 }
 
