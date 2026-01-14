@@ -87,12 +87,12 @@ set_load 0.13 [all_outputs]
 set_min_capacitance 0.0 [get_nets *]
 
 #10. report area, timing, power, constraints, cell in the report directory with a suitable name
-report_constraints > ${REPORT_DIR}/${TOP_NAME}_constraints.txt
-report_area > ${REPORT_DIR}/${TOP_NAME}_area.txt
-report_cell > ${REPORT_DIR}/${TOP_NAME}_cells.txt
-report_timing > ${REPORT_DIR}/${TOP_NAME}_timing.txt
-report_power > ${REPORT_DIR}/${TOP_NAME}_power.txt
+report_constraints > ${REPORT_DIR}/flat_rpt_6ns/${TOP_NAME}_constraints.txt
+report_area > ${REPORT_DIR}/flat_rpt_6ns/${TOP_NAME}_area.txt
+report_cell > ${REPORT_DIR}/flat_rpt_6ns/${TOP_NAME}_cells.txt
+report_timing > ${REPORT_DIR}/flat_rpt_6ns/${TOP_NAME}_timing.txt
+report_power > ${REPORT_DIR}/flat_rpt_6ns/${TOP_NAME}_power.txt
 
 #11. export the netlist, ddc and sdf file in out direcory with a suitable name
-write -hierarchy -format ddc -output ${OUT_DIR}/${TOP_NAME}.ddc
-write -hierarchy -format verilog -output ${OUT_DIR}/${TOP_NAME}.v
+write -hierarchy -format ddc -output ${OUT_DIR}/flat_6ns/${TOP_NAME}.ddc
+write -hierarchy -format verilog -output ${OUT_DIR}/flat_6ns/${TOP_NAME}.v
