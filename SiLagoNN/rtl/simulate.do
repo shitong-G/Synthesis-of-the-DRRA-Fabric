@@ -134,36 +134,4 @@ catch {
 # Zoom back to full
 wave zoom full
 
-# ============================================================================
-# Verification Instructions
-# ============================================================================
-echo ""
-echo "=========================================="
-echo "VERIFICATION CHECKLIST:"
-echo "=========================================="
-echo "1. Check Clock & Reset:"
-echo "   - clk: Periodic (12ns period) ✓"
-echo "   - rst_n: '0' from 0-4ns, then '1' ✓"
-echo ""
-echo "2. Check Instruction Loading:"
-echo "   - instr_load: Pulses after reset ✓"
-echo "   - Should load 27 instructions ✓"
-echo ""
-echo "3. Check DPU Outputs (MOST IMPORTANT):"
-echo "   - dpu_out_0 and dpu_out_1: Should NOT be 'X' or 'U'"
-echo "   - Expected results: 16, 18, 20, 22, ... (vector addition)"
-echo "   - Navigate to execution phase (after 444ns) to check outputs"
-echo ""
-echo "4. If outputs are 'X', check:"
-echo "   - instruction.bin exists in ../tb/vec_add/"
-echo "   - Simulation ran long enough (10000ns)"
-echo "   - Reset sequence completed"
-echo ""
-echo "5. To save waveform manually:"
-echo "   - Right-click on Wave window -> Print to File"
-echo "   - Choose format: PNG, PDF, or PostScript"
-echo "=========================================="
-echo ""
-echo "Simulation complete!"
-echo "Waveform images saved to: ../sim/waveforms/"
-echo ""
+

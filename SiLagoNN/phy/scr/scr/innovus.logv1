@@ -1,0 +1,1175 @@
+[01/16 01:37:33      0s] 
+[01/16 01:37:33      0s] Cadence Innovus(TM) Implementation System.
+[01/16 01:37:33      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[01/16 01:37:33      0s] 
+[01/16 01:37:33      0s] Version:	v21.19-s058_1, built Thu Apr 4 09:59:17 PDT 2024
+[01/16 01:37:33      0s] Options:	-stylus 
+[01/16 01:37:33      0s] Date:		Fri Jan 16 01:37:33 2026
+[01/16 01:37:33      0s] Host:		il2225ht25_shitongg (x86_64 w/Linux 5.15.0-164-generic) (12cores*48cpus*Intel(R) Xeon(R) CPU E7-8857 v2 @ 3.00GHz 30720KB)
+[01/16 01:37:33      0s] OS:		Rocky Linux 8.10 (Green Obsidian)
+[01/16 01:37:33      0s] 
+[01/16 01:37:33      0s] License:
+[01/16 01:37:33      0s] 		[01:37:33.290187] Configured Lic search path (21.01-s002): 3000@lic08.ug.kth.se:27020@lic04.ug.kth.se:27020@lic05.ug.kth.se
+[01/16 01:37:33      0s] 
+[01/16 01:37:33      0s] 		invs	Innovus Implementation System	21.1	checkout succeeded
+[01/16 01:37:33      0s] 		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[01/16 01:37:44     10s] 
+[01/16 01:37:44     10s] 
+[01/16 01:37:50     16s] Reset Parastics called with the command setExtractRCMode -reset[01/16 01:37:52     18s] **WARN: (IMPOPT-801):	Genus executable not found in PATH. Install Genus, add the path to the genus executable in the PATH variable and rerun Innovus.
+@(#)CDS: Innovus v21.19-s058_1 (64bit) 04/04/2024 09:59 (Linux 3.10.0-693.el7.x86_64)
+[01/16 01:37:53     19s] @(#)CDS: NanoRoute 21.19-s058_1 NR231113-0413/21_19-UB (database version 18.20.605) {superthreading v2.17}
+[01/16 01:37:53     19s] @(#)CDS: AAE 21.19-s004 (64bit) 04/04/2024 (Linux 3.10.0-693.el7.x86_64)
+[01/16 01:37:53     19s] @(#)CDS: CTE 21.19-s010_1 () Mar 27 2024 01:55:37 ( )
+[01/16 01:37:53     19s] @(#)CDS: SYNTECH 21.19-s002_1 () Sep  6 2023 22:17:00 ( )
+[01/16 01:37:53     19s] @(#)CDS: CPE v21.19-s026
+[01/16 01:37:53     19s] @(#)CDS: IQuantus/TQuantus 21.1.1-s966 (64bit) Wed Mar 8 10:22:20 PST 2023 (Linux 3.10.0-693.el7.x86_64)
+[01/16 01:37:53     19s] @(#)CDS: OA 22.60-p087 Thu Feb  9 09:35:26 2023
+[01/16 01:37:53     19s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[01/16 01:37:53     19s] @(#)CDS: RCDB 11.15.0
+[01/16 01:37:53     19s] @(#)CDS: STYLUS 21.12-s019_1 (12/20/2022 05:13 PST)
+[01/16 01:37:53     19s] @(#)CDS: SystemPlanner-21.18-10439 (21.18) (2023-03-01 15:40:03+0800)
+[01/16 01:37:53     19s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_1678987_il2225ht25_shitongg_shitongg_1xLLn1.
+
+[01/16 01:37:53     19s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_1678987_il2225ht25_shitongg_shitongg_1xLLn1.
+[01/16 01:37:53     19s] 
+[01/16 01:37:53     19s] Change the soft stacksize limit to 0.2%RAM (6192 mbytes). Set global soft_stack_size_limit to change the value.
+[01/16 01:37:56     22s] 
+[01/16 01:37:56     22s] **INFO:  MMMC transition support version v31-84 
+[01/16 01:37:56     22s] 
+[01/16 01:38:00     26s] @innovus 1> read_db ../db/flat/drra_wrapper.dat/
+[01/16 01:38:18     29s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+#% Begin load design ... (date=01/16 01:38:18, mem=955.8M)
+[01/16 01:38:18     29s] Set Default Net Delay as 1000 ps.
+[01/16 01:38:18     29s] Set Default Net Load as 0.5 pF. 
+[01/16 01:38:18     29s] Set Default Input Pin Transition as 0.1 ps.
+[01/16 01:38:18     29s] Set Using Default Delay Limit as 1000.
+[01/16 01:38:18     29s] **WARN: (IMPUDM-33):	Global variable "timing_enable_separate_device_slew_effect_sensitivities" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+[01/16 01:38:18     29s] **WARN: (IMPUDM-33):	Global variable "timing_enable_separate_device_slew_effect_sensitivities" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+[01/16 01:38:18     29s] **WARN: (IMPDBTCL-321):	The attribute 'timing_enable_separate_device_slew_effect_sensitivities' still works but will be obsolete in a future major release. You should remove it from your script before the next major release to avoid errors.
+[01/16 01:38:18     29s] **WARN: (IMPUDM-33):	Global variable "timing_enable_separate_device_slew_effect_sensitivities" is obsolete and will be removed in a future release. The obsolete variable still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove the obsolete variable from your script.
+[01/16 01:38:19     29s] Set Default Input Pin Transition as 0.1 ps.
+[01/16 01:38:19     30s] Loading design 'drra_wrapper' saved by 'Innovus' '21.19-s058_1' on 'Fri Jan 16 00:54:55 2026'.
+[01/16 01:38:20     30s] Reading LIBSET_WC timing library '/opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz' ...
+[01/16 01:39:40    153s] **WARN: (TECHLIB-302):	No function defined for cell 'SC8T_TAPZBX8_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+[01/16 01:39:40    153s] **WARN: (TECHLIB-302):	No function defined for cell 'SC8T_TAPX8_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+[01/16 01:39:40    153s] **WARN: (TECHLIB-302):	No function defined for cell 'SC8T_NOM1COLCAPPX1_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+[01/16 01:39:40    153s] **WARN: (TECHLIB-302):	No function defined for cell 'SC8T_NOM1COLCAPNX1_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+[01/16 01:39:40    153s] **WARN: (TECHLIB-302):	No function defined for cell 'SC8T_FILLX8_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+[01/16 01:39:40    153s] **WARN: (TECHLIB-302):	No function defined for cell 'SC8T_FILLX64_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+[01/16 01:39:40    153s] **WARN: (TECHLIB-302):	No function defined for cell 'SC8T_FILLX5_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+[01/16 01:39:40    153s] **WARN: (TECHLIB-302):	No function defined for cell 'SC8T_FILLX4_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+[01/16 01:39:40    153s] **WARN: (TECHLIB-302):	No function defined for cell 'SC8T_FILLX3_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+[01/16 01:39:40    153s] **WARN: (TECHLIB-302):	No function defined for cell 'SC8T_FILLX32_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+[01/16 01:39:40    153s] **WARN: (TECHLIB-302):	No function defined for cell 'SC8T_FILLX2_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+[01/16 01:39:40    153s] **WARN: (TECHLIB-302):	No function defined for cell 'SC8T_FILLX1_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+[01/16 01:39:40    153s] **WARN: (TECHLIB-302):	No function defined for cell 'SC8T_FILLX16_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+[01/16 01:39:40    153s] **WARN: (TECHLIB-302):	No function defined for cell 'SC8T_FILLX128_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+[01/16 01:39:40    153s] **WARN: (TECHLIB-302):	No function defined for cell 'SC8T_CONCAVEPRX9_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+[01/16 01:39:40    153s] **WARN: (TECHLIB-302):	No function defined for cell 'SC8T_CONCAVEPRX11_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+[01/16 01:39:40    153s] **WARN: (TECHLIB-302):	No function defined for cell 'SC8T_CONCAVEPLX9_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+[01/16 01:39:40    153s] **WARN: (TECHLIB-302):	No function defined for cell 'SC8T_CONCAVEPLX11_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+[01/16 01:39:40    153s] **WARN: (TECHLIB-302):	No function defined for cell 'SC8T_CONCAVENRX9_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+[01/16 01:39:40    153s] **WARN: (TECHLIB-302):	No function defined for cell 'SC8T_CONCAVENRX11_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+[01/16 01:39:40    153s] Message <TECHLIB-302> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[01/16 01:39:41    154s] Read 959 cells in library 'GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C' 
+[01/16 01:39:41    154s] Reading LIBSET_BC timing library '/opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_FFG_0P72V_0P00V_0P00V_0P00V_M40C_ccs.lib.gz' ...
+[01/16 01:41:01    276s] Read 959 cells in library 'GF22FDX_SC8T_104CPP_BASE_CSC28L_FFG_0P72V_0P00V_0P00V_0P00V_M40C' 
+[01/16 01:41:02    277s] Ending "PreSetAnalysisView" (total cpu=0:04:06, real=0:02:42, peak res=2020.7M, current mem=1028.8M)
+[01/16 01:41:02    277s] 
+[01/16 01:41:02    277s] Loading LEF file /home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/libs/lef/22FDSOI_10M_2Mx_4Cx_2Bx_2Jx_LB_104cpp_tech.lef ...
+[01/16 01:41:02    277s] 
+[01/16 01:41:02    277s] Loading LEF file /home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/libs/lef/GF22FDX_SC8T_104CPP_BASE_CSC28L.lef ...
+[01/16 01:41:02    277s] **WARN: (IMPLF-378):	The spacing for cell edge type 'SC8T_104CPP_BASE_CSC_SOURCE' and 'SC8T_104CPP_BASE_CSC_SOURCE' is already defined. It will be overwritten by the new definition in LEF file '/home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/libs/lef/GF22FDX_SC8T_104CPP_BASE_CSC28L.lef'.
+[01/16 01:41:02    277s] If it's defined multiple times for the same pair of types, only the last one
+[01/16 01:41:02    277s] will be kept. Check all definitions in all LEF files to remove any duplicated
+[01/16 01:41:02    277s] definitions to avoid this warning message.
+[01/16 01:41:02    277s] **WARN: (IMPLF-378):	The spacing for cell edge type 'SC8T_104CPP_BASE_CSC_DRAIN' and 'SC8T_104CPP_BASE_CSC_SOURCE' is already defined. It will be overwritten by the new definition in LEF file '/home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/libs/lef/GF22FDX_SC8T_104CPP_BASE_CSC28L.lef'.
+[01/16 01:41:02    277s] If it's defined multiple times for the same pair of types, only the last one
+[01/16 01:41:02    277s] will be kept. Check all definitions in all LEF files to remove any duplicated
+[01/16 01:41:02    277s] definitions to avoid this warning message.
+[01/16 01:41:02    277s] **WARN: (IMPLF-378):	The spacing for cell edge type 'SC8T_104CPP_BASE_CSC_DRAIN' and 'SC8T_104CPP_BASE_CSC_DRAIN' is already defined. It will be overwritten by the new definition in LEF file '/home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/libs/lef/GF22FDX_SC8T_104CPP_BASE_CSC28L.lef'.
+[01/16 01:41:02    277s] If it's defined multiple times for the same pair of types, only the last one
+[01/16 01:41:02    277s] will be kept. Check all definitions in all LEF files to remove any duplicated
+[01/16 01:41:02    277s] definitions to avoid this warning message.
+[01/16 01:41:02    277s] **WARN: (IMPLF-378):	The spacing for cell edge type 'SC8T_104CPP_BASE_CSC_SOURCE2CPP' and 'SC8T_104CPP_BASE_CSC_SOURCE2CPP' is already defined. It will be overwritten by the new definition in LEF file '/home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/libs/lef/GF22FDX_SC8T_104CPP_BASE_CSC28L.lef'.
+[01/16 01:41:02    277s] If it's defined multiple times for the same pair of types, only the last one
+[01/16 01:41:02    277s] will be kept. Check all definitions in all LEF files to remove any duplicated
+[01/16 01:41:02    277s] definitions to avoid this warning message.
+[01/16 01:41:02    277s] **WARN: (IMPLF-378):	The spacing for cell edge type 'SC8T_104CPP_BASE_CSC_SOURCE' and 'SC8T_104CPP_BASE_CSC_SOURCE2CPP' is already defined. It will be overwritten by the new definition in LEF file '/home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/libs/lef/GF22FDX_SC8T_104CPP_BASE_CSC28L.lef'.
+[01/16 01:41:02    277s] If it's defined multiple times for the same pair of types, only the last one
+[01/16 01:41:02    277s] will be kept. Check all definitions in all LEF files to remove any duplicated
+[01/16 01:41:02    277s] definitions to avoid this warning message.
+[01/16 01:41:02    277s] **WARN: (IMPLF-378):	The spacing for cell edge type 'SC8T_104CPP_BASE_CSC_SOURCE2CPP' and 'SC8T_104CPP_BASE_CSC_DRAIN' is already defined. It will be overwritten by the new definition in LEF file '/home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/libs/lef/GF22FDX_SC8T_104CPP_BASE_CSC28L.lef'.
+[01/16 01:41:02    277s] If it's defined multiple times for the same pair of types, only the last one
+[01/16 01:41:02    277s] will be kept. Check all definitions in all LEF files to remove any duplicated
+[01/16 01:41:02    277s] definitions to avoid this warning message.
+[01/16 01:41:02    277s] Set DBUPerIGU to M1 pitch 104.
+[01/16 01:41:02    277s] [01:41:02.348426] Periodic Lic check successful
+[01/16 01:41:02    277s] [01:41:02.348451] Feature usage summary:
+[01/16 01:41:02    277s] [01:41:02.348451] Innovus_Impl_System
+[01/16 01:41:02    277s] [01:41:02.348451] Innovus_20nm_Opt
+[01/16 01:41:02    277s] 
+[01/16 01:41:02    277s] This command "read_db ../db/flat/drra_wrapper.dat/" required an extra checkout of license invs_20nm.
+[01/16 01:41:02    277s] Additional license(s) checked out: 1 'Innovus_20nm_Opt' license(s)
+[01/16 01:41:02    277s] **WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XOR3X8_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/16 01:41:02    277s] Type 'man IMPLF-201' for more detail.
+[01/16 01:41:02    277s] **WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XOR3X4_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/16 01:41:02    277s] Type 'man IMPLF-201' for more detail.
+[01/16 01:41:02    277s] **WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XOR3X2_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/16 01:41:02    277s] Type 'man IMPLF-201' for more detail.
+[01/16 01:41:02    277s] **WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XOR3X1_MR_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/16 01:41:02    277s] Type 'man IMPLF-201' for more detail.
+[01/16 01:41:02    277s] **WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XOR3X1_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/16 01:41:02    277s] Type 'man IMPLF-201' for more detail.
+[01/16 01:41:02    277s] **WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XOR2X8_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/16 01:41:02    277s] Type 'man IMPLF-201' for more detail.
+[01/16 01:41:02    277s] **WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XOR2X4_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/16 01:41:02    277s] Type 'man IMPLF-201' for more detail.
+[01/16 01:41:02    277s] **WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XOR2X2_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/16 01:41:02    277s] Type 'man IMPLF-201' for more detail.
+[01/16 01:41:02    277s] **WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XOR2X1_MR_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/16 01:41:02    277s] Type 'man IMPLF-201' for more detail.
+[01/16 01:41:02    277s] **WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XOR2X1_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/16 01:41:02    277s] Type 'man IMPLF-201' for more detail.
+[01/16 01:41:02    277s] **WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XOR2X0P5_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/16 01:41:02    277s] Type 'man IMPLF-201' for more detail.
+[01/16 01:41:02    277s] **WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XNR3X8_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/16 01:41:02    277s] Type 'man IMPLF-201' for more detail.
+[01/16 01:41:02    277s] **WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XNR3X4_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/16 01:41:02    277s] Type 'man IMPLF-201' for more detail.
+[01/16 01:41:02    277s] **WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XNR3X2_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/16 01:41:02    277s] Type 'man IMPLF-201' for more detail.
+[01/16 01:41:02    277s] **WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XNR3X1_MR_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/16 01:41:02    277s] Type 'man IMPLF-201' for more detail.
+[01/16 01:41:02    277s] **WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XNR3X1_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/16 01:41:02    277s] Type 'man IMPLF-201' for more detail.
+[01/16 01:41:02    277s] **WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XNR2X8_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/16 01:41:02    277s] Type 'man IMPLF-201' for more detail.
+[01/16 01:41:02    277s] **WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XNR2X4_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/16 01:41:02    277s] Type 'man IMPLF-201' for more detail.
+[01/16 01:41:02    277s] **WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XNR2X2_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/16 01:41:02    277s] Type 'man IMPLF-201' for more detail.
+[01/16 01:41:02    277s] **WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XNR2X1_MR_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/16 01:41:02    277s] Type 'man IMPLF-201' for more detail.
+[01/16 01:41:02    277s] **WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+[01/16 01:41:02    277s] To increase the message display limit, refer to the product command reference manual.
+[01/16 01:41:02    277s] **WARN: (IMPLF-200):	Pin 'A' in macro 'SC8T_ANTENNAX11_CSC28L' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[01/16 01:41:02    277s] Type 'man IMPLF-200' for more detail.
+[01/16 01:41:02    277s] 
+[01/16 01:41:02    277s] ##  Check design process and node:  
+[01/16 01:41:02    277s] ##  Both design process and tech node are not set.
+[01/16 01:41:02    277s] 
+[01/16 01:41:02    277s] Loading view definition file from /home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/viewDefinition.tcl
+[01/16 01:41:02    277s] % Begin Load netlist data ... (date=01/16 01:41:02, mem=1039.0M)
+[01/16 01:41:02    277s] *** Begin netlist parsing (mem=1702.8M) ***
+[01/16 01:41:02    277s] Created 959 new cells from 2 timing libraries.
+[01/16 01:41:02    277s] Reading netlist ...
+[01/16 01:41:02    277s] Backslashed names will retain backslash and a trailing blank character.
+[01/16 01:41:02    277s] Reading verilogBinary netlist '/home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/vbin/drra_wrapper.v.bin'
+[01/16 01:41:05    280s] 
+[01/16 01:41:05    280s] *** Memory Usage v#1 (Current mem = 1886.816M, initial mem = 494.961M) ***
+[01/16 01:41:05    280s] *** End netlist parsing (cpu=0:00:02.3, real=0:00:03.0, mem=1886.8M) ***
+[01/16 01:41:05    280s] % End Load netlist data ... (date=01/16 01:41:05, total cpu=0:00:02.4, real=0:00:03.0, peak res=1380.0M, current mem=1380.0M)
+[01/16 01:41:05    280s] Top level cell is drra_wrapper.
+[01/16 01:41:06    281s] Hooked 1918 DB cells to tlib cells.
+[01/16 01:41:06    281s] Ending "BindLib:" (total cpu=0:00:00.8, real=0:00:01.0, peak res=1465.1M, current mem=1465.1M)
+[01/16 01:41:07    282s] Starting recursive module instantiation check.
+[01/16 01:41:07    282s] No recursion found.
+[01/16 01:41:07    282s] Building hierarchical netlist for Cell drra_wrapper ...
+[01/16 01:41:07    285s] *** Netlist is unique.
+[01/16 01:41:08    285s] Setting Std. cell height to 640 DBU (smallest netlist inst).
+[01/16 01:41:08    285s] ** info: there are 5263 modules.
+[01/16 01:41:08    285s] ** info: there are 666587 stdCell insts.
+[01/16 01:41:08    285s] 
+[01/16 01:41:08    285s] *** Memory Usage v#1 (Current mem = 2566.730M, initial mem = 494.961M) ***
+[01/16 01:41:08    285s] *info: set bottom ioPad orient R0
+[01/16 01:41:08    286s] 
+[01/16 01:41:08    286s] Honor LEF defined pitches for advanced node
+[01/16 01:41:08    286s] Start create_tracks
+[01/16 01:41:09    286s] Loading preference file /home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/gui.pref.tcl ...
+[01/16 01:41:10    287s] Slack adjustment of -0 applied on <default> path group
+[01/16 01:41:10    287s] Effort level <high> specified for reg2reg path_group
+[01/16 01:41:10    287s] Slack adjustment of -0 applied on reg2reg path_group
+[01/16 01:41:10    287s] add_rings command will ignore shorts while creating rings.
+[01/16 01:41:10    287s] add_rings command will disallow rings to go over rows.
+[01/16 01:41:10    287s] add_rings command will consider rows while creating rings.
+[01/16 01:41:10    287s] The ring targets are set to core/block ring wires.
+[01/16 01:41:10    287s] add_stripes will allow jog to connect padcore ring and block ring.
+[01/16 01:41:10    287s] 
+[01/16 01:41:10    287s] Stripes will not extend to closest target.
+[01/16 01:41:10    287s] When breaking rings, the power planner will consider the existence of blocks.
+[01/16 01:41:10    287s] add_stripes will break automatically at non-default domains when generating global stripes over the core area or default domain.
+[01/16 01:41:10    287s] The entire stripe set will break at the domain if one of the nets is not in the domain.
+[01/16 01:41:10    287s] Stripes will not be created over regions without power planning wires.
+[01/16 01:41:10    287s] Offset for stripe breaking is set to 0.
+[01/16 01:41:10    287s] Stripes will stop at the boundary of the specified area.
+[01/16 01:41:10    287s] The power planner will set stripe antenna targets to none (no trimming allowed).
+[01/16 01:41:10    287s] Change floorplan default-technical-site to 'SC8T_104CPP_CMOS22FDX'.
+[01/16 01:41:10    287s] 
+[01/16 01:41:10    287s] Loading LEF file /home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/drra_wrapper.lef.info.gz ...
+[01/16 01:41:11    288s] Extraction setup Delayed 
+[01/16 01:41:11    288s] *Info: initialize multi-corner CTS.
+[01/16 01:41:11    288s] Reading LIBSET_TC timing library '/opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_TT_0P80V_0P00V_0P00V_0P00V_25C_ccs.lib.gz' ...
+[01/16 01:42:29    406s] Read 959 cells in library 'GF22FDX_SC8T_104CPP_BASE_CSC28L_TT_0P80V_0P00V_0P00V_0P00V_25C' 
+[01/16 01:42:30    408s] Ending "SetAnalysisView" (total cpu=0:02:00, real=0:01:19, peak res=2855.3M, current mem=1906.0M)
+[01/16 01:42:31    408s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[01/16 01:42:31    408s] 
+[01/16 01:42:31    408s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[01/16 01:42:31    408s] Summary for sequential cells identification: 
+[01/16 01:42:31    408s]   Identified SBFF number: 75
+[01/16 01:42:31    408s]   Identified MBFF number: 0
+[01/16 01:42:31    408s]   Identified SB Latch number: 0
+[01/16 01:42:31    408s]   Identified MB Latch number: 0
+[01/16 01:42:31    408s]   Not identified SBFF number: 0
+[01/16 01:42:31    408s]   Not identified MBFF number: 0
+[01/16 01:42:31    408s]   Not identified SB Latch number: 0
+[01/16 01:42:31    408s]   Not identified MB Latch number: 0
+[01/16 01:42:31    408s]   Number of sequential cells which are not FFs: 26
+[01/16 01:42:31    408s] Total number of combinational cells: 808
+[01/16 01:42:31    408s] Total number of sequential cells: 101
+[01/16 01:42:31    408s] Total number of tristate cells: 4
+[01/16 01:42:31    408s] Total number of level shifter cells: 0
+[01/16 01:42:31    408s] Total number of power gating cells: 0
+[01/16 01:42:31    408s] Total number of isolation cells: 0
+[01/16 01:42:31    408s] Total number of power switch cells: 0
+[01/16 01:42:31    408s] Total number of pulse generator cells: 0
+[01/16 01:42:31    408s] Total number of always on buffers: 0
+[01/16 01:42:31    408s] Total number of retention cells: 0
+[01/16 01:42:31    408s] Total number of physical cells: 46
+[01/16 01:42:31    408s] List of usable buffers: SC8T_BUFX0P5_A_CSC28L SC8T_BUFX0P5_CSC28L SC8T_BUFX10_CSC28L SC8T_BUFX12_CSC28L SC8T_BUFX16_CSC28L SC8T_BUFX1P5_CSC28L SC8T_BUFX1_A_CSC28L SC8T_BUFX1_MR_CSC28L SC8T_BUFX1_CSC28L SC8T_BUFX20_CSC28L SC8T_BUFX24_CSC28L[01/16 01:42:31    408s] 
+[01/16 01:42:31    408s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+ SC8T_BUFX2_CSC28L SC8T_BUFX3_CSC28L SC8T_BUFX4_MR_CSC28L SC8T_BUFX4_CSC28L SC8T_BUFX6_CSC28L SC8T_BUFX8_CSC28L SC8T_CKBUFX10_CSC28L SC8T_CKBUFX12_CSC28L SC8T_CKBUFX16_CSC28L SC8T_CKBUFX1_MR_CSC28L SC8T_CKBUFX1_CSC28L SC8T_CKBUFX20_CSC28L SC8T_CKBUFX24_CSC28L SC8T_CKBUFX2_CSC28L SC8T_CKBUFX4_CSC28L SC8T_CKBUFX6_CSC28L SC8T_CKBUFX8_CSC28L
+[01/16 01:42:31    408s] Total number of usable buffers: 28
+[01/16 01:42:31    408s] List of unusable buffers:
+[01/16 01:42:31    408s] Total number of unusable buffers: 0
+[01/16 01:42:31    408s] List of usable inverters: SC8T_INVX0P5_CSC28L SC8T_INVX10_CSC28L SC8T_INVX12_CSC28L SC8T_INVX16_CSC28L SC8T_INVX1P5_CSC28L SC8T_INVX1_3CPP_CSC28L SC8T_INVX1_MR_CSC28L SC8T_INVX1_CSC28L SC8T_INVX20_CSC28L SC8T_INVX24_CSC28L SC8T_INVX2_CSC28L SC8T_INVX3_CSC28L SC8T_INVX4_CSC28L SC8T_INVX6_CSC28L SC8T_INVX8_CSC28L SC8T_CKINVX10_CSC28L SC8T_CKINVX12_CSC28L SC8T_CKINVX16_CSC28L SC8T_CKINVX1_MR_CSC28L SC8T_CKINVX1_CSC28L SC8T_CKINVX20_CSC28L SC8T_CKINVX24_CSC28L SC8T_CKINVX2_CSC28L SC8T_CKINVX4_CSC28L SC8T_CKINVX6_CSC28L SC8T_CKINVX8_CSC28L
+[01/16 01:42:31    408s] Total number of usable inverters: 26
+[01/16 01:42:31    408s] List of unusable inverters:
+[01/16 01:42:31    408s] Total number of unusable inverters: 0
+[01/16 01:42:31    408s] List of identified usable delay cells: SC8T_DLY100X1_CSC28L SC8T_DLY40X1_CSC28L SC8T_DLY60X1_CSC28L SC8T_DLY80X1_CSC28L
+[01/16 01:42:31    408s] Total number of identified usable delay cells: 4
+[01/16 01:42:31    408s] List of identified unusable delay cells:
+[01/16 01:42:31    408s] Total number of identified unusable delay cells: 0
+[01/16 01:42:31    408s] 
+[01/16 01:42:31    408s] TimeStamp Deleting Cell Server Begin ...
+[01/16 01:42:31    408s] 
+[01/16 01:42:31    408s] TimeStamp Deleting Cell Server End ...
+[01/16 01:42:31    408s] Ending "Cell type marking" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2406.4M, current mem=2406.4M)
+[01/16 01:42:31    408s] 
+[01/16 01:42:31    408s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[01/16 01:42:31    408s] Summary for sequential cells identification: 
+[01/16 01:42:31    408s]   Identified SBFF number: 75
+[01/16 01:42:31    408s]   Identified MBFF number: 0
+[01/16 01:42:31    408s]   Identified SB Latch number: 0
+[01/16 01:42:31    408s]   Identified MB Latch number: 0
+[01/16 01:42:31    408s]   Not identified SBFF number: 0
+[01/16 01:42:31    408s]   Not identified MBFF number: 0
+[01/16 01:42:31    408s]   Not identified SB Latch number: 0
+[01/16 01:42:31    408s]   Not identified MB Latch number: 0
+[01/16 01:42:31    408s]   Number of sequential cells which are not FFs: 26
+[01/16 01:42:31    408s] 
+[01/16 01:42:31    408s] Trim Metal Layers:
+[01/16 01:42:31    408s]  Visiting view : AVF_RCWORST
+[01/16 01:42:31    408s]    : PowerDomain = none : Weighted F : unweighted  = 11.10 (1.000) with rcCorner = 0
+[01/16 01:42:31    408s]    : PowerDomain = none : Weighted F : unweighted  = 7.90 (1.000) with rcCorner = -1
+[01/16 01:42:31    408s]  Visiting view : AVF_RCBEST
+[01/16 01:42:31    408s]    : PowerDomain = none : Weighted F : unweighted  = 8.00 (1.000) with rcCorner = 1
+[01/16 01:42:31    408s]    : PowerDomain = none : Weighted F : unweighted  = 5.60 (1.000) with rcCorner = -1
+[01/16 01:42:31    408s]  Visiting view : AVF_RCTYP
+[01/16 01:42:31    408s]    : PowerDomain = none : Weighted F : unweighted  = 7.30 (1.000) with rcCorner = 2
+[01/16 01:42:31    408s]    : PowerDomain = none : Weighted F : unweighted  = 5.30 (1.000) with rcCorner = -1
+[01/16 01:42:31    408s] 
+[01/16 01:42:31    408s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[01/16 01:42:31    408s] 
+[01/16 01:42:31    408s] TimeStamp Deleting Cell Server Begin ...
+[01/16 01:42:31    408s] 
+[01/16 01:42:31    408s] TimeStamp Deleting Cell Server End ...
+[01/16 01:42:32    409s] Reading floorplan file - /home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/drra_wrapper.fp.gz (mem = 3110.1M).
+[01/16 01:42:32    409s] % Begin Load floorplan data ... (date=01/16 01:42:32, mem=2408.3M)
+[01/16 01:42:32    409s] *info: reset 718199 existing net BottomPreferredLayer and AvoidDetour
+[01/16 01:42:32    409s] Deleting old partition specification.
+[01/16 01:42:32    409s] Set FPlanBox to (0 0 882232 622880)
+[01/16 01:42:32    409s] 
+[01/16 01:42:32    409s] Honor LEF defined pitches for advanced node
+[01/16 01:42:32    409s] Start create_tracks
+[01/16 01:42:32    409s]  ... processed partition successfully.
+[01/16 01:42:32    409s] Reading binary special route file /home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/drra_wrapper.fp.spr.gz (Created by Innovus v21.19-s058_1 on Fri Jan 16 00:54:37 2026, version: 1)
+[01/16 01:42:32    409s] Convert 0 swires and 0 svias from compressed groups
+[01/16 01:42:32    409s] 51 swires and 38 svias were compressed
+[01/16 01:42:32    409s] 51 swires and 38 svias were decompressed from small or sparse groups
+[01/16 01:42:32    409s] Ending "Read special route file" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2411.1M, current mem=2411.1M)
+[01/16 01:42:33    410s] There are 1006 nets with weight being set
+[01/16 01:42:33    410s] There are 2072 nets with bottomPreferredRoutingLayer being set
+[01/16 01:42:33    410s] There are 1006 nets with avoidDetour being set
+[01/16 01:42:33    410s] Extracting standard cell pins and blockage ...... 
+[01/16 01:42:33    410s] Pin and blockage extraction finished
+[01/16 01:42:33    410s] Delete all existing relative floorplan constraints.
+[01/16 01:42:33    410s] % End Load floorplan data ... (date=01/16 01:42:33, total cpu=0:00:01.4, real=0:00:01.0, peak res=2411.2M, current mem=2411.2M)
+[01/16 01:42:33    410s] Reading congestion map file /home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/drra_wrapper.route.congmap.gz ...
+[01/16 01:42:33    410s] % Begin Load SymbolTable ... (date=01/16 01:42:33, mem=2411.2M)
+[01/16 01:42:33    410s] Suppress "**WARN ..." messages.
+[01/16 01:42:33    410s] routingBox: (0 0) (882232 622880)
+[01/16 01:42:33    410s] coreBox:    (10088 10000) (872144 612880)
+[01/16 01:42:33    410s] Un-suppress "**WARN ..." messages.
+[01/16 01:42:35    412s] % End Load SymbolTable ... (date=01/16 01:42:35, total cpu=0:00:02.0, real=0:00:02.0, peak res=2490.3M, current mem=2490.3M)
+[01/16 01:42:35    412s] Loading place ...
+[01/16 01:42:35    413s] % Begin Load placement data ... (date=01/16 01:42:35, mem=2490.3M)
+[01/16 01:42:35    413s] Reading placement file - /home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/drra_wrapper.place.gz.
+[01/16 01:42:35    413s] ** Reading stdCellPlacement_binary (Created by Innovus v21.19-s058_1 on Fri Jan 16 00:54:32 2026, version# 2) ...
+[01/16 01:42:37    414s] Read Views for adaptive view pruning ...
+[01/16 01:42:37    414s] Read 0 views from Binary DB for adaptive view pruning
+[01/16 01:42:37    414s] *** Completed restorePlace (cpu=0:00:01.6 real=0:00:02.0 mem=3205.2M) ***
+[01/16 01:42:37    414s] Total net length = 6.947e+06 (3.311e+06 3.637e+06) (ext = 1.337e+06)
+[01/16 01:42:37    414s] % End Load placement data ... (date=01/16 01:42:37, total cpu=0:00:01.8, real=0:00:02.0, peak res=2562.4M, current mem=2562.4M)
+[01/16 01:42:37    414s] % Begin Load routing data ... (date=01/16 01:42:37, mem=2562.5M)
+[01/16 01:42:37    414s] Reading routing file - /home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/drra_wrapper.route.gz.
+[01/16 01:42:38    414s] Reading Innovus routing data (Created by Innovus v21.19-s058_1 on Fri Jan 16 00:54:32 2026 Format: 20.1) ...
+[01/16 01:42:47    424s] *** Total 695879 nets are successfully restored.
+[01/16 01:42:47    424s] *** Completed restoreRoute (cpu=0:00:09.2 real=0:00:10.0 mem=4494.2M) ***
+[01/16 01:42:47    424s] % End Load routing data ... (date=01/16 01:42:47, total cpu=0:00:09.3, real=0:00:10.0, peak res=3858.9M, current mem=3858.9M)
+[01/16 01:42:47    424s] Loading Drc markers ...
+[01/16 01:42:47    424s] ... 1058 markers are loaded ...
+[01/16 01:42:47    424s] ... 97 geometry drc markers are loaded ...
+[01/16 01:42:47    424s] ... 954 antenna drc markers are loaded ...
+[01/16 01:42:47    424s] TAT_INFO: restoreCongMap REAL = 1 : CPU = 0 : MEM = 0.
+[01/16 01:42:47    424s] Reading property file /home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/drra_wrapper.prop
+[01/16 01:42:48    424s] *** Completed restoreProperty (cpu=0:00:00.4 real=0:00:01.0 mem=4499.2M) ***
+[01/16 01:42:48    424s] Reading dirtyarea snapshot file /home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/drra_wrapper.db.da.gz (Create by Innovus v21.19-s058_1 on Fri Jan 16 00:54:50 2026, version: 6).
+[01/16 01:42:51    428s] add_rings command will ignore shorts while creating rings.
+[01/16 01:42:51    428s] add_rings command will disallow rings to go over rows.
+[01/16 01:42:51    428s] add_rings command will consider rows while creating rings.
+[01/16 01:42:51    428s] The ring targets are set to core/block ring wires.
+[01/16 01:42:51    428s] add_stripes will allow jog to connect padcore ring and block ring.
+[01/16 01:42:51    428s] 
+[01/16 01:42:51    428s] Stripes will not extend to closest target.
+[01/16 01:42:51    428s] When breaking rings, the power planner will consider the existence of blocks.
+[01/16 01:42:51    428s] add_stripes will break automatically at non-default domains when generating global stripes over the core area or default domain.
+[01/16 01:42:51    428s] The entire stripe set will break at the domain if one of the nets is not in the domain.
+[01/16 01:42:51    428s] Stripes will not be created over regions without power planning wires.
+[01/16 01:42:51    428s] Offset for stripe breaking is set to 0.
+[01/16 01:42:51    428s] Stripes will stop at the boundary of the specified area.
+[01/16 01:42:51    428s] The power planner will set stripe antenna targets to none (no trimming allowed).
+[01/16 01:42:51    428s] Change floorplan default-technical-site to 'SC8T_104CPP_CMOS22FDX'.
+[01/16 01:42:51    428s] Loading preRoute extraction data from directory '/home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/extraction/' ...
+[01/16 01:42:51    428s] Restore PreRoute RC Grid meta data successful.
+[01/16 01:42:51    428s] Extraction setup Started 
+[01/16 01:42:51    428s] 
+[01/16 01:42:51    428s] Trim Metal Layers:
+[01/16 01:42:51    428s] Initializing multi-corner RC extraction with 3 active RC Corners ...
+[01/16 01:42:51    428s] Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For post_route extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+[01/16 01:42:51    428s] __QRC_SADV_USE_LE__ is set 0
+[01/16 01:42:53    429s] Metal Layer Id 1 is M1 
+[01/16 01:42:53    429s] Metal Layer Id 2 is M2 
+[01/16 01:42:53    429s] Metal Layer Id 3 is C1 
+[01/16 01:42:53    429s] Metal Layer Id 4 is C2 
+[01/16 01:42:53    429s] Metal Layer Id 5 is C3 
+[01/16 01:42:53    429s] Metal Layer Id 6 is C4 
+[01/16 01:42:53    429s] Metal Layer Id 7 is BA 
+[01/16 01:42:53    429s] Metal Layer Id 8 is BB 
+[01/16 01:42:53    429s] Metal Layer Id 9 is JA 
+[01/16 01:42:53    429s] Metal Layer Id 10 is JB 
+[01/16 01:42:53    429s] Metal Layer Id 11 is LB 
+[01/16 01:42:53    429s] Via Layer Id 33 is CA 
+[01/16 01:42:53    429s] Via Layer Id 34 is V1 
+[01/16 01:42:53    429s] Via Layer Id 35 is AY 
+[01/16 01:42:53    429s] Via Layer Id 36 is A1 
+[01/16 01:42:53    429s] Via Layer Id 37 is A2 
+[01/16 01:42:53    429s] Via Layer Id 38 is A3 
+[01/16 01:42:53    429s] Via Layer Id 39 is WT 
+[01/16 01:42:53    429s] Via Layer Id 40 is WA 
+[01/16 01:42:53    429s] Via Layer Id 41 is YR 
+[01/16 01:42:53    429s] Via Layer Id 42 is XD 
+[01/16 01:42:53    429s] Via Layer Id 43 is VV 
+[01/16 01:42:53    429s] 
+[01/16 01:42:53    429s] Trim Metal Layers:
+[01/16 01:42:53    429s]  lef metal Layer Id 1 mapped to tech Id 5 of Layer m1 
+[01/16 01:42:53    429s]  lef via Layer Id 1 mapped to tech Id 6 of Layer v1 
+[01/16 01:42:53    429s]  lef metal Layer Id 2 mapped to tech Id 7 of Layer m2 
+[01/16 01:42:53    429s] Generating auto layer map file.
+[01/16 01:42:53    429s]  lef via Layer Id 2 mapped to tech Id 8 of Layer ay 
+[01/16 01:42:53    429s]  lef metal Layer Id 3 mapped to tech Id 9 of Layer c1 
+[01/16 01:42:53    429s]  lef via Layer Id 3 mapped to tech Id 10 of Layer a1 
+[01/16 01:42:53    429s]  lef metal Layer Id 4 mapped to tech Id 11 of Layer c2 
+[01/16 01:42:53    429s]  lef via Layer Id 4 mapped to tech Id 12 of Layer a2 
+[01/16 01:42:53    429s]  lef metal Layer Id 5 mapped to tech Id 13 of Layer c3 
+[01/16 01:42:53    429s]  lef via Layer Id 5 mapped to tech Id 14 of Layer a3 
+[01/16 01:42:53    429s]  lef metal Layer Id 6 mapped to tech Id 15 of Layer c4 
+[01/16 01:42:53    429s]  lef via Layer Id 6 mapped to tech Id 16 of Layer wt 
+[01/16 01:42:53    429s]  lef metal Layer Id 7 mapped to tech Id 17 of Layer ba 
+[01/16 01:42:53    429s]  lef via Layer Id 7 mapped to tech Id 18 of Layer wa 
+[01/16 01:42:53    429s]  lef metal Layer Id 8 mapped to tech Id 19 of Layer bb 
+[01/16 01:42:53    429s]  lef via Layer Id 8 mapped to tech Id 20 of Layer yr 
+[01/16 01:42:53    429s]  lef metal Layer Id 9 mapped to tech Id 21 of Layer ja 
+[01/16 01:42:53    429s]  lef via Layer Id 9 mapped to tech Id 22 of Layer xd 
+[01/16 01:42:53    429s]  lef metal Layer Id 10 mapped to tech Id 23 of Layer jb 
+[01/16 01:42:53    429s]  lef via Layer Id 10 mapped to tech Id 24 of Layer vv 
+[01/16 01:42:53    429s]  lef metal Layer Id 11 mapped to tech Id 25 of Layer lb 
+[01/16 01:42:53    429s] Metal Layer Id 1 mapped to 5 
+[01/16 01:42:53    429s] Via Layer Id 1 mapped to 6 
+[01/16 01:42:53    429s] Metal Layer Id 2 mapped to 7 
+[01/16 01:42:53    429s] Via Layer Id 2 mapped to 8 
+[01/16 01:42:53    429s] Metal Layer Id 3 mapped to 9 
+[01/16 01:42:53    429s] Via Layer Id 3 mapped to 10 
+[01/16 01:42:53    429s] Metal Layer Id 4 mapped to 11 
+[01/16 01:42:53    429s] Via Layer Id 4 mapped to 12 
+[01/16 01:42:53    429s] Metal Layer Id 5 mapped to 13 
+[01/16 01:42:53    429s] Via Layer Id 5 mapped to 14 
+[01/16 01:42:53    429s] Metal Layer Id 6 mapped to 15 
+[01/16 01:42:53    429s] Via Layer Id 6 mapped to 16 
+[01/16 01:42:53    429s] Metal Layer Id 7 mapped to 17 
+[01/16 01:42:53    429s] Via Layer Id 7 mapped to 18 
+[01/16 01:42:53    429s] Metal Layer Id 8 mapped to 19 
+[01/16 01:42:53    429s] Via Layer Id 8 mapped to 20 
+[01/16 01:42:53    429s] Metal Layer Id 9 mapped to 21 
+[01/16 01:42:53    429s] Via Layer Id 9 mapped to 22 
+[01/16 01:42:53    429s] Metal Layer Id 10 mapped to 23 
+[01/16 01:42:53    429s] Via Layer Id 10 mapped to 24 
+[01/16 01:42:53    429s] Metal Layer Id 11 mapped to 25 
+[01/16 01:42:53    430s] eee: pegPreRouteEnableSaveRestoreRCPatterns:1, retVal:1, doesAnyTechFileNeedExtraction1
+[01/16 01:42:53    430s] eee: Reading patterns meta data.
+[01/16 01:42:53    430s] Restore PreRoute Pattern Extraction data failed due to mismatch in Via count..
+[01/16 01:42:53    430s] eee: PatternAvail:0, PreRoutePatternReadFailed:3
+[01/16 01:42:53    430s] Restore PreRoute Pattern Extraction data failed.
+[01/16 01:42:53    430s] Importing multi-corner technology file(s) for preRoute extraction...
+[01/16 01:42:53    430s] /home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/libs/mmmc/rc_worst/qrcTechFile
+[01/16 01:42:55    431s] Metal Layer Id 1 is M1 
+[01/16 01:42:55    431s] Metal Layer Id 2 is M2 
+[01/16 01:42:55    431s] Metal Layer Id 3 is C1 
+[01/16 01:42:55    431s] Metal Layer Id 4 is C2 
+[01/16 01:42:55    431s] Metal Layer Id 5 is C3 
+[01/16 01:42:55    431s] Metal Layer Id 6 is C4 
+[01/16 01:42:55    431s] Metal Layer Id 7 is BA 
+[01/16 01:42:55    431s] Metal Layer Id 8 is BB 
+[01/16 01:42:55    431s] Metal Layer Id 9 is JA 
+[01/16 01:42:55    431s] Metal Layer Id 10 is JB 
+[01/16 01:42:55    431s] Metal Layer Id 11 is LB 
+[01/16 01:42:55    431s] Via Layer Id 33 is CA 
+[01/16 01:42:55    431s] Via Layer Id 34 is V1 
+[01/16 01:42:55    431s] Via Layer Id 35 is AY 
+[01/16 01:42:55    431s] Via Layer Id 36 is A1 
+[01/16 01:42:55    431s] Via Layer Id 37 is A2 
+[01/16 01:42:55    431s] Via Layer Id 38 is A3 
+[01/16 01:42:55    431s] Via Layer Id 39 is WT 
+[01/16 01:42:55    431s] Via Layer Id 40 is WA 
+[01/16 01:42:55    431s] Via Layer Id 41 is YR 
+[01/16 01:42:55    431s] Via Layer Id 42 is XD 
+[01/16 01:42:55    431s] Via Layer Id 43 is VV 
+[01/16 01:42:55    431s] 
+[01/16 01:42:55    431s] Trim Metal Layers:
+[01/16 01:42:55    431s]  lef metal Layer Id 1 mapped to tech Id 5 of Layer m1 
+[01/16 01:42:55    431s] Generating auto layer map file.
+[01/16 01:42:55    431s]  lef via Layer Id 1 mapped to tech Id 6 of Layer v1 
+[01/16 01:42:55    431s]  lef metal Layer Id 2 mapped to tech Id 7 of Layer m2 
+[01/16 01:42:55    431s]  lef via Layer Id 2 mapped to tech Id 8 of Layer ay 
+[01/16 01:42:55    431s]  lef metal Layer Id 3 mapped to tech Id 9 of Layer c1 
+[01/16 01:42:55    431s]  lef via Layer Id 3 mapped to tech Id 10 of Layer a1 
+[01/16 01:42:55    431s]  lef metal Layer Id 4 mapped to tech Id 11 of Layer c2 
+[01/16 01:42:55    431s]  lef via Layer Id 4 mapped to tech Id 12 of Layer a2 
+[01/16 01:42:55    431s]  lef metal Layer Id 5 mapped to tech Id 13 of Layer c3 
+[01/16 01:42:55    431s]  lef via Layer Id 5 mapped to tech Id 14 of Layer a3 
+[01/16 01:42:55    431s]  lef metal Layer Id 6 mapped to tech Id 15 of Layer c4 
+[01/16 01:42:55    431s]  lef via Layer Id 6 mapped to tech Id 16 of Layer wt 
+[01/16 01:42:55    431s]  lef metal Layer Id 7 mapped to tech Id 17 of Layer ba 
+[01/16 01:42:55    431s]  lef via Layer Id 7 mapped to tech Id 18 of Layer wa 
+[01/16 01:42:55    431s]  lef metal Layer Id 8 mapped to tech Id 19 of Layer bb 
+[01/16 01:42:55    431s]  lef via Layer Id 8 mapped to tech Id 20 of Layer yr 
+[01/16 01:42:55    431s]  lef metal Layer Id 9 mapped to tech Id 21 of Layer ja 
+[01/16 01:42:55    431s]  lef via Layer Id 9 mapped to tech Id 22 of Layer xd 
+[01/16 01:42:55    431s]  lef metal Layer Id 10 mapped to tech Id 23 of Layer jb 
+[01/16 01:42:55    431s]  lef via Layer Id 10 mapped to tech Id 24 of Layer vv 
+[01/16 01:42:55    431s]  lef metal Layer Id 11 mapped to tech Id 25 of Layer lb 
+[01/16 01:42:55    431s] Metal Layer Id 1 mapped to 5 
+[01/16 01:42:55    431s] Via Layer Id 1 mapped to 6 
+[01/16 01:42:55    431s] Metal Layer Id 2 mapped to 7 
+[01/16 01:42:55    431s] Via Layer Id 2 mapped to 8 
+[01/16 01:42:55    431s] Metal Layer Id 3 mapped to 9 
+[01/16 01:42:55    431s] Via Layer Id 3 mapped to 10 
+[01/16 01:42:55    431s] Metal Layer Id 4 mapped to 11 
+[01/16 01:42:55    431s] Via Layer Id 4 mapped to 12 
+[01/16 01:42:55    431s] Metal Layer Id 5 mapped to 13 
+[01/16 01:42:55    431s] Via Layer Id 5 mapped to 14 
+[01/16 01:42:55    431s] Metal Layer Id 6 mapped to 15 
+[01/16 01:42:55    431s] Via Layer Id 6 mapped to 16 
+[01/16 01:42:55    431s] Metal Layer Id 7 mapped to 17 
+[01/16 01:42:55    431s] Via Layer Id 7 mapped to 18 
+[01/16 01:42:55    431s] Metal Layer Id 8 mapped to 19 
+[01/16 01:42:55    431s] Via Layer Id 8 mapped to 20 
+[01/16 01:42:55    431s] Metal Layer Id 9 mapped to 21 
+[01/16 01:42:55    431s] Via Layer Id 9 mapped to 22 
+[01/16 01:42:55    431s] Metal Layer Id 10 mapped to 23 
+[01/16 01:42:55    431s] Via Layer Id 10 mapped to 24 
+[01/16 01:42:55    431s] Metal Layer Id 11 mapped to 25 
+[01/16 01:43:00    436s] /home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/libs/mmmc/rc_best/qrcTechFile
+[01/16 01:43:02    438s] Metal Layer Id 1 is M1 
+[01/16 01:43:02    438s] Metal Layer Id 2 is M2 
+[01/16 01:43:02    438s] Metal Layer Id 3 is C1 
+[01/16 01:43:02    438s] Metal Layer Id 4 is C2 
+[01/16 01:43:02    438s] Metal Layer Id 5 is C3 
+[01/16 01:43:02    438s] Metal Layer Id 6 is C4 
+[01/16 01:43:02    438s] Metal Layer Id 7 is BA 
+[01/16 01:43:02    438s] Metal Layer Id 8 is BB 
+[01/16 01:43:02    438s] Metal Layer Id 9 is JA 
+[01/16 01:43:02    438s] Metal Layer Id 10 is JB 
+[01/16 01:43:02    438s] Metal Layer Id 11 is LB 
+[01/16 01:43:02    438s] Via Layer Id 33 is CA 
+[01/16 01:43:02    438s] Via Layer Id 34 is V1 
+[01/16 01:43:02    438s] Via Layer Id 35 is AY 
+[01/16 01:43:02    438s] Via Layer Id 36 is A1 
+[01/16 01:43:02    438s] Via Layer Id 37 is A2 
+[01/16 01:43:02    438s] Via Layer Id 38 is A3 
+[01/16 01:43:02    438s] Via Layer Id 39 is WT 
+[01/16 01:43:02    438s] Via Layer Id 40 is WA 
+[01/16 01:43:02    438s] Via Layer Id 41 is YR 
+[01/16 01:43:02    438s] Via Layer Id 42 is XD 
+[01/16 01:43:02    438s] Via Layer Id 43 is VV 
+[01/16 01:43:02    438s] 
+[01/16 01:43:02    438s] Trim Metal Layers:
+[01/16 01:43:02    438s]  lef metal Layer Id 1 mapped to tech Id 5 of Layer m1 
+[01/16 01:43:02    438s]  lef via Layer Id 1 mapped to tech Id 6 of Layer v1 
+[01/16 01:43:02    438s]  lef metal Layer Id 2 mapped to tech Id 7 of Layer m2 
+[01/16 01:43:02    438s]  lef via Layer Id 2 mapped to tech Id 8 of Layer ay 
+[01/16 01:43:02    438s]  lef metal Layer Id 3 mapped to tech Id 9 of Layer c1 
+[01/16 01:43:02    438s] Generating auto layer map file.
+[01/16 01:43:02    438s]  lef via Layer Id 3 mapped to tech Id 10 of Layer a1 
+[01/16 01:43:02    438s]  lef metal Layer Id 4 mapped to tech Id 11 of Layer c2 
+[01/16 01:43:02    438s]  lef via Layer Id 4 mapped to tech Id 12 of Layer a2 
+[01/16 01:43:02    438s]  lef metal Layer Id 5 mapped to tech Id 13 of Layer c3 
+[01/16 01:43:02    438s]  lef via Layer Id 5 mapped to tech Id 14 of Layer a3 
+[01/16 01:43:02    438s]  lef metal Layer Id 6 mapped to tech Id 15 of Layer c4 
+[01/16 01:43:02    438s]  lef via Layer Id 6 mapped to tech Id 16 of Layer wt 
+[01/16 01:43:02    438s]  lef metal Layer Id 7 mapped to tech Id 17 of Layer ba 
+[01/16 01:43:02    438s]  lef via Layer Id 7 mapped to tech Id 18 of Layer wa 
+[01/16 01:43:02    438s]  lef metal Layer Id 8 mapped to tech Id 19 of Layer bb 
+[01/16 01:43:02    438s]  lef via Layer Id 8 mapped to tech Id 20 of Layer yr 
+[01/16 01:43:02    438s]  lef metal Layer Id 9 mapped to tech Id 21 of Layer ja 
+[01/16 01:43:02    438s]  lef via Layer Id 9 mapped to tech Id 22 of Layer xd 
+[01/16 01:43:02    438s]  lef metal Layer Id 10 mapped to tech Id 23 of Layer jb 
+[01/16 01:43:02    438s]  lef via Layer Id 10 mapped to tech Id 24 of Layer vv 
+[01/16 01:43:02    438s]  lef metal Layer Id 11 mapped to tech Id 25 of Layer lb 
+[01/16 01:43:02    438s] Metal Layer Id 1 mapped to 5 
+[01/16 01:43:02    438s] Via Layer Id 1 mapped to 6 
+[01/16 01:43:02    438s] Metal Layer Id 2 mapped to 7 
+[01/16 01:43:02    438s] Via Layer Id 2 mapped to 8 
+[01/16 01:43:02    438s] Metal Layer Id 3 mapped to 9 
+[01/16 01:43:02    438s] Via Layer Id 3 mapped to 10 
+[01/16 01:43:02    438s] Metal Layer Id 4 mapped to 11 
+[01/16 01:43:02    438s] Via Layer Id 4 mapped to 12 
+[01/16 01:43:02    438s] Metal Layer Id 5 mapped to 13 
+[01/16 01:43:02    438s] Via Layer Id 5 mapped to 14 
+[01/16 01:43:02    438s] Metal Layer Id 6 mapped to 15 
+[01/16 01:43:02    438s] Via Layer Id 6 mapped to 16 
+[01/16 01:43:02    438s] Metal Layer Id 7 mapped to 17 
+[01/16 01:43:02    438s] Via Layer Id 7 mapped to 18 
+[01/16 01:43:02    438s] Metal Layer Id 8 mapped to 19 
+[01/16 01:43:02    438s] Via Layer Id 8 mapped to 20 
+[01/16 01:43:02    438s] Metal Layer Id 9 mapped to 21 
+[01/16 01:43:02    438s] Via Layer Id 9 mapped to 22 
+[01/16 01:43:02    438s] Metal Layer Id 10 mapped to 23 
+[01/16 01:43:02    438s] Via Layer Id 10 mapped to 24 
+[01/16 01:43:02    438s] Metal Layer Id 11 mapped to 25 
+[01/16 01:43:07    443s] /home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/libs/mmmc/rc_typ/qrcTechFile
+[01/16 01:43:08    444s] Metal Layer Id 1 is M1 
+[01/16 01:43:08    444s] Metal Layer Id 2 is M2 
+[01/16 01:43:08    444s] Metal Layer Id 3 is C1 
+[01/16 01:43:08    444s] Metal Layer Id 4 is C2 
+[01/16 01:43:08    444s] Metal Layer Id 5 is C3 
+[01/16 01:43:08    444s] Metal Layer Id 6 is C4 
+[01/16 01:43:08    444s] Metal Layer Id 7 is BA 
+[01/16 01:43:08    444s] Metal Layer Id 8 is BB 
+[01/16 01:43:08    444s] Metal Layer Id 9 is JA 
+[01/16 01:43:08    444s] Metal Layer Id 10 is JB 
+[01/16 01:43:08    444s] Metal Layer Id 11 is LB 
+[01/16 01:43:08    444s] Via Layer Id 33 is CA 
+[01/16 01:43:08    444s] Via Layer Id 34 is V1 
+[01/16 01:43:08    444s] Via Layer Id 35 is AY 
+[01/16 01:43:08    444s] Via Layer Id 36 is A1 
+[01/16 01:43:08    444s] Via Layer Id 37 is A2 
+[01/16 01:43:08    444s] Via Layer Id 38 is A3 
+[01/16 01:43:08    444s] Via Layer Id 39 is WT 
+[01/16 01:43:08    444s] Via Layer Id 40 is WA 
+[01/16 01:43:08    444s] Via Layer Id 41 is YR 
+[01/16 01:43:08    444s] Via Layer Id 42 is XD 
+[01/16 01:43:08    444s] Via Layer Id 43 is VV 
+[01/16 01:43:08    444s] 
+[01/16 01:43:08    444s] Trim Metal Layers:
+[01/16 01:43:08    444s]  lef metal Layer Id 1 mapped to tech Id 5 of Layer m1 
+[01/16 01:43:08    444s] Generating auto layer map file.
+[01/16 01:43:08    444s]  lef via Layer Id 1 mapped to tech Id 6 of Layer v1 
+[01/16 01:43:08    444s]  lef metal Layer Id 2 mapped to tech Id 7 of Layer m2 
+[01/16 01:43:08    444s]  lef via Layer Id 2 mapped to tech Id 8 of Layer ay 
+[01/16 01:43:08    444s]  lef metal Layer Id 3 mapped to tech Id 9 of Layer c1 
+[01/16 01:43:08    444s]  lef via Layer Id 3 mapped to tech Id 10 of Layer a1 
+[01/16 01:43:08    444s]  lef metal Layer Id 4 mapped to tech Id 11 of Layer c2 
+[01/16 01:43:08    444s]  lef via Layer Id 4 mapped to tech Id 12 of Layer a2 
+[01/16 01:43:08    444s]  lef metal Layer Id 5 mapped to tech Id 13 of Layer c3 
+[01/16 01:43:08    444s]  lef via Layer Id 5 mapped to tech Id 14 of Layer a3 
+[01/16 01:43:08    444s]  lef metal Layer Id 6 mapped to tech Id 15 of Layer c4 
+[01/16 01:43:08    444s]  lef via Layer Id 6 mapped to tech Id 16 of Layer wt 
+[01/16 01:43:08    444s]  lef metal Layer Id 7 mapped to tech Id 17 of Layer ba 
+[01/16 01:43:08    444s]  lef via Layer Id 7 mapped to tech Id 18 of Layer wa 
+[01/16 01:43:08    444s]  lef metal Layer Id 8 mapped to tech Id 19 of Layer bb 
+[01/16 01:43:08    444s]  lef via Layer Id 8 mapped to tech Id 20 of Layer yr 
+[01/16 01:43:08    444s]  lef metal Layer Id 9 mapped to tech Id 21 of Layer ja 
+[01/16 01:43:08    444s]  lef via Layer Id 9 mapped to tech Id 22 of Layer xd 
+[01/16 01:43:08    444s]  lef metal Layer Id 10 mapped to tech Id 23 of Layer jb 
+[01/16 01:43:08    444s]  lef via Layer Id 10 mapped to tech Id 24 of Layer vv 
+[01/16 01:43:08    444s]  lef metal Layer Id 11 mapped to tech Id 25 of Layer lb 
+[01/16 01:43:08    444s] Metal Layer Id 1 mapped to 5 
+[01/16 01:43:08    444s] Via Layer Id 1 mapped to 6 
+[01/16 01:43:08    444s] Metal Layer Id 2 mapped to 7 
+[01/16 01:43:08    444s] Via Layer Id 2 mapped to 8 
+[01/16 01:43:08    444s] Metal Layer Id 3 mapped to 9 
+[01/16 01:43:08    444s] Via Layer Id 3 mapped to 10 
+[01/16 01:43:08    444s] Metal Layer Id 4 mapped to 11 
+[01/16 01:43:08    444s] Via Layer Id 4 mapped to 12 
+[01/16 01:43:08    444s] Metal Layer Id 5 mapped to 13 
+[01/16 01:43:08    444s] Via Layer Id 5 mapped to 14 
+[01/16 01:43:08    444s] Metal Layer Id 6 mapped to 15 
+[01/16 01:43:08    444s] Via Layer Id 6 mapped to 16 
+[01/16 01:43:08    444s] Metal Layer Id 7 mapped to 17 
+[01/16 01:43:08    444s] Via Layer Id 7 mapped to 18 
+[01/16 01:43:08    444s] Metal Layer Id 8 mapped to 19 
+[01/16 01:43:08    444s] Via Layer Id 8 mapped to 20 
+[01/16 01:43:08    444s] Metal Layer Id 9 mapped to 21 
+[01/16 01:43:08    444s] Via Layer Id 9 mapped to 22 
+[01/16 01:43:08    444s] Metal Layer Id 10 mapped to 23 
+[01/16 01:43:08    444s] Via Layer Id 10 mapped to 24 
+[01/16 01:43:08    444s] Metal Layer Id 11 mapped to 25 
+[01/16 01:43:14    450s] Completed (cpu: 0:00:22.0 real: 0:00:22.0)
+[01/16 01:43:14    450s] Set Shrink Factor to 1.00000
+[01/16 01:43:14    450s] Summary of Active RC-Corners : 
+[01/16 01:43:14    450s]  
+[01/16 01:43:14    450s]  Analysis View: AVF_RCWORST
+[01/16 01:43:14    450s]     RC-Corner Name        : rc_worst
+[01/16 01:43:14    450s]     RC-Corner Index       : 0
+[01/16 01:43:14    450s]     RC-Corner Temperature : 25 Celsius
+[01/16 01:43:14    450s]     RC-Corner Cap Table   : ''
+[01/16 01:43:14    450s]     RC-Corner PreRoute Res Factor         : 1
+[01/16 01:43:14    450s]     RC-Corner PreRoute Cap Factor         : 1
+[01/16 01:43:14    450s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[01/16 01:43:14    450s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[01/16 01:43:14    450s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[01/16 01:43:14    450s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[01/16 01:43:14    450s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[01/16 01:43:14    450s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[01/16 01:43:14    450s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[01/16 01:43:14    450s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[01/16 01:43:14    450s]     RC-Corner Technology file: '/home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/libs/mmmc/rc_worst/qrcTechFile'
+[01/16 01:43:14    450s]  
+[01/16 01:43:14    450s]  Analysis View: AVF_RCBEST
+[01/16 01:43:14    450s]     RC-Corner Name        : rc_best
+[01/16 01:43:14    450s]     RC-Corner Index       : 1
+[01/16 01:43:14    450s]     RC-Corner Temperature : 25 Celsius
+[01/16 01:43:14    450s]     RC-Corner Cap Table   : ''
+[01/16 01:43:14    450s]     RC-Corner PreRoute Res Factor         : 1
+[01/16 01:43:14    450s]     RC-Corner PreRoute Cap Factor         : 1
+[01/16 01:43:14    450s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[01/16 01:43:14    450s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[01/16 01:43:14    450s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[01/16 01:43:14    450s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[01/16 01:43:14    450s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[01/16 01:43:14    450s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[01/16 01:43:14    450s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[01/16 01:43:14    450s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[01/16 01:43:14    450s]     RC-Corner Technology file: '/home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/libs/mmmc/rc_best/qrcTechFile'
+[01/16 01:43:14    450s]  
+[01/16 01:43:14    450s]  Analysis View: AVF_RCTYP
+[01/16 01:43:14    450s]     RC-Corner Name        : rc_typ
+[01/16 01:43:14    450s]     RC-Corner Index       : 2
+[01/16 01:43:14    450s]     RC-Corner Temperature : 25 Celsius
+[01/16 01:43:14    450s]     RC-Corner Cap Table   : ''
+[01/16 01:43:14    450s]     RC-Corner PreRoute Res Factor         : 1
+[01/16 01:43:14    450s]     RC-Corner PreRoute Cap Factor         : 1
+[01/16 01:43:14    450s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[01/16 01:43:14    450s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[01/16 01:43:14    450s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[01/16 01:43:14    450s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[01/16 01:43:14    450s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[01/16 01:43:14    450s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[01/16 01:43:14    450s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[01/16 01:43:14    450s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 [01/16 01:43:14    450s] Technology file '/home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/libs/mmmc/rc_worst/qrcTechFile' associated with first view 'AVF_RCWORST' will be used as the primary corner for the multi-corner extraction.
+{1 1 1} 
+[01/16 01:43:14    450s]     RC-Corner Technology file: '/home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/libs/mmmc/rc_typ/qrcTechFile'
+[01/16 01:43:14    450s] 
+[01/16 01:43:14    450s] Trim Metal Layers:
+[01/16 01:43:16    452s] LayerId::1 widthSet size::1
+[01/16 01:43:16    452s] LayerId::2 widthSet size::1
+[01/16 01:43:16    452s] LayerId::3 widthSet size::1
+[01/16 01:43:16    452s] LayerId::4 widthSet size::1
+[01/16 01:43:16    452s] LayerId::5 widthSet size::1
+[01/16 01:43:16    452s] LayerId::6 widthSet size::1
+[01/16 01:43:16    452s] LayerId::7 widthSet size::1
+[01/16 01:43:16    452s] LayerId::8 widthSet size::1
+[01/16 01:43:16    452s] LayerId::9 widthSet size::1
+[01/16 01:43:16    452s] LayerId::10 widthSet size::1
+[01/16 01:43:16    452s] LayerId::11 widthSet size::1
+[01/16 01:43:16    452s] Checksum of RCGrid density data read::(132 132) passed::1
+[01/16 01:43:16    452s] Restore PreRoute RC Grid data successful.
+[01/16 01:43:16    452s] eee: pegSigSF::1.070000
+[01/16 01:43:16    452s] Restored RC grid for preRoute extraction.
+[01/16 01:43:16    452s] Initializing multi-corner resistance tables ...
+[01/16 01:43:16    452s] ReadRoutingBlockageFactor status::1
+[01/16 01:43:16    452s] Restore PreRoute Blockage data successful.
+[01/16 01:43:16    452s] eee: Reading Grid unit RC.
+[01/16 01:43:17    452s] pesRestorePreRouteExtractionData::readRCGridUnitRC called for corner::rc_worst
+[01/16 01:43:17    452s] RCCorner in design data Name::rc_worst Tech::/home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/libs/mmmc/rc_worst/qrcTechFile 25.000000 1.000000 1.000000 
+[01/16 01:43:17    452s] RCCorner in saved data Name::rc_worst Tech::/opt/pdk/gf22/V1.0_4.1/PEX/QRC/10M_2Mx_4Cx_2Bx_2Jx_LBthick/FuncRCmaxDP/qrcTechFile 25.000000 1.000000 1.000000 
+[01/16 01:43:17    452s] Unit RC read checksum: 605484, count: 605484, status: 1
+[01/16 01:43:17    452s] pesRestorePreRouteExtractionData::readRCGridUnitRC called for corner::rc_best
+[01/16 01:43:17    452s] RCCorner in design data Name::rc_best Tech::/home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/libs/mmmc/rc_best/qrcTechFile 25.000000 1.000000 1.000000 
+[01/16 01:43:17    452s] RCCorner in saved data Name::rc_worst Tech::/opt/pdk/gf22/V1.0_4.1/PEX/QRC/10M_2Mx_4Cx_2Bx_2Jx_LBthick/FuncRCmaxDP/qrcTechFile 25.000000 1.000000 1.000000 
+[01/16 01:43:17    452s] RCCorner in design data Name::rc_best Tech::/home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/libs/mmmc/rc_best/qrcTechFile 25.000000 1.000000 1.000000 
+[01/16 01:43:17    452s] RCCorner in saved data Name::rc_best Tech::/opt/pdk/gf22/V1.0_4.1/PEX/QRC/10M_2Mx_4Cx_2Bx_2Jx_LBthick/FuncRCminDP/qrcTechFile 25.000000 1.000000 1.000000 
+[01/16 01:43:17    452s] Unit RC read checksum: 605484, count: 605484, status: 1
+[01/16 01:43:17    452s] pesRestorePreRouteExtractionData::readRCGridUnitRC called for corner::rc_typ
+[01/16 01:43:17    452s] RCCorner in design data Name::rc_typ Tech::/home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/libs/mmmc/rc_typ/qrcTechFile 25.000000 1.000000 1.000000 
+[01/16 01:43:17    452s] RCCorner in saved data Name::rc_worst Tech::/opt/pdk/gf22/V1.0_4.1/PEX/QRC/10M_2Mx_4Cx_2Bx_2Jx_LBthick/FuncRCmaxDP/qrcTechFile 25.000000 1.000000 1.000000 
+[01/16 01:43:17    452s] RCCorner in design data Name::rc_typ Tech::/home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/libs/mmmc/rc_typ/qrcTechFile 25.000000 1.000000 1.000000 
+[01/16 01:43:17    452s] RCCorner in saved data Name::rc_best Tech::/opt/pdk/gf22/V1.0_4.1/PEX/QRC/10M_2Mx_4Cx_2Bx_2Jx_LBthick/FuncRCminDP/qrcTechFile 25.000000 1.000000 1.000000 
+[01/16 01:43:17    452s] RCCorner in design data Name::rc_typ Tech::/home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/libs/mmmc/rc_typ/qrcTechFile 25.000000 1.000000 1.000000 
+[01/16 01:43:17    452s] RCCorner in saved data Name::rc_typ Tech::/opt/pdk/gf22/V1.0_4.1/PEX/QRC/10M_2Mx_4Cx_2Bx_2Jx_LBthick/nominal/qrcTechFile 25.000000 1.000000 1.000000 
+[01/16 01:43:17    452s] Unit RC read checksum: 605484, count: 605484, status: 1
+[01/16 01:43:17    452s] Number of RC corner to be extracted::0
+[01/16 01:43:18    452s] eee: l::1 avDens::0.002053 usedTrk::1626.765000 availTrk::792441.999325 sigTrk::1626.765000
+[01/16 01:43:18    452s] eee: l::2 avDens::0.165846 usedTrk::174746.089330 availTrk::1053666.653280 sigTrk::174746.089330
+[01/16 01:43:18    452s] eee: l::3 avDens::0.341261 usedTrk::316884.198622 availTrk::928568.888889 sigTrk::316884.198622
+[01/16 01:43:18    452s] eee: l::4 avDens::0.276595 usedTrk::255087.186148 availTrk::922240.000000 sigTrk::255093.751928
+[01/16 01:43:18    452s] eee: l::5 avDens::0.295849 usedTrk::270045.843518 availTrk::912782.222222 sigTrk::270126.245893
+[01/16 01:43:18    452s] eee: l::6 avDens::0.204473 usedTrk::179180.348098 availTrk::876302.222222 sigTrk::179184.927009
+[01/16 01:43:18    452s] eee: l::7 avDens::0.256312 usedTrk::96847.371442 availTrk::377848.888889 sigTrk::96855.978471
+[01/16 01:43:18    452s] eee: l::8 avDens::0.073231 usedTrk::23274.962957 availTrk::317831.111111 sigTrk::23274.962957
+[01/16 01:43:18    452s] eee: l::9 avDens::0.064328 usedTrk::453.329375 availTrk::7047.111111 sigTrk::453.329375
+[01/16 01:43:18    452s] eee: l::10 avDens::0.092910 usedTrk::306.562187 availTrk::3299.555556 sigTrk::306.562187
+[01/16 01:43:18    452s] eee: l::11 avDens::0.354481 usedTrk::74.992344 availTrk::211.555556 sigTrk::74.992344
+[01/16 01:43:18    452s] {RT rc_worst 0 11 11 {7 0} {9 0} {10 0} 3}
+[01/16 01:43:18    453s] eee: LAM: n=32 LLS=2-3 HLS=3-5 rDens=0.397281 uaWl=0.997499 uaWlH=0.656520 aWlH=0.001911 lMod=0 pMax=0.920600 pMod=77 wcR=0.665400 newSi=0.001600 wHLS=1.667808 siPrev=0 viaL=0.000000 crit=0.002872 shortMod=0.014360 fMod=0.000718 
+[01/16 01:43:18    453s] Restore PreRoute all RC Grid data successful.[01/16 01:43:18    453s] Default value for post_route extraction mode's extract_rc_effort_level (extract_rc_effort_level option of set_db) changed to 'medium'.
+[01/16 01:43:18    453s] Start generating vias ..
+#create default rule from bind_ndr_rule rule=0x7fbfeed68cc0 0x7fbf00d4a560
+[01/16 01:43:23    458s] #WARNING (NRFL-374)  spacing table is not monotonically increasing. Layer M2 spacing table entry 0.060000 is less than the previous entry 0.080000.
+[01/16 01:43:23    458s] #WARNING (NRFL-374)  spacing table is not monotonically increasing. Layer M2 spacing table entry 0.064000 is less than the previous entry 0.080000.
+[01/16 01:43:23    458s] #WARNING (NRFL-374)  spacing table is not monotonically increasing. Layer M2 spacing table entry 0.060000 is less than the previous entry 0.080000.
+[01/16 01:43:23    458s] #WARNING (NRFL-374)  spacing table is not monotonically increasing. Layer M2 spacing table entry 0.068000 is less than the previous entry 0.080000.
+[01/16 01:43:23    458s] #WARNING (NRFL-374)  spacing table is not monotonically increasing. Layer M2 spacing table entry 0.068000 is less than the previous entry 0.080000.
+[01/16 01:43:23    458s] #WARNING (NRFL-374)  spacing table is not monotonically increasing. Layer M2 spacing table entry 0.074000 is less than the previous entry 0.080000.
+[01/16 01:43:24    458s] ### import design signature (1): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 via=1076721229 routing_via=1
+[01/16 01:43:24    458s] Extracting standard cell pins and blockage ...... 
+[01/16 01:43:24    458s] Pin and blockage extraction finished
+[01/16 01:43:24    458s] Via generation completed successfully.
+[01/16 01:43:24    458s] __QRC_SADV_USE_LE__ is set 0
+[01/16 01:43:25    460s] Metal Layer Id 1 is M1 
+[01/16 01:43:25    460s] Metal Layer Id 2 is M2 
+[01/16 01:43:25    460s] Metal Layer Id 3 is C1 
+[01/16 01:43:25    460s] Metal Layer Id 4 is C2 
+[01/16 01:43:25    460s] Metal Layer Id 5 is C3 
+[01/16 01:43:25    460s] Metal Layer Id 6 is C4 
+[01/16 01:43:25    460s] Metal Layer Id 7 is BA 
+[01/16 01:43:25    460s] Metal Layer Id 8 is BB 
+[01/16 01:43:25    460s] Metal Layer Id 9 is JA 
+[01/16 01:43:25    460s] Metal Layer Id 10 is JB 
+[01/16 01:43:25    460s] Metal Layer Id 11 is LB 
+[01/16 01:43:25    460s] Via Layer Id 33 is CA 
+[01/16 01:43:25    460s] Via Layer Id 34 is V1 
+[01/16 01:43:25    460s] Via Layer Id 35 is AY 
+[01/16 01:43:25    460s] Via Layer Id 36 is A1 
+[01/16 01:43:25    460s] Via Layer Id 37 is A2 
+[01/16 01:43:25    460s] Via Layer Id 38 is A3 
+[01/16 01:43:25    460s] Via Layer Id 39 is WT 
+[01/16 01:43:25    460s] Via Layer Id 40 is WA 
+[01/16 01:43:25    460s] Via Layer Id 41 is YR 
+[01/16 01:43:25    460s] Via Layer Id 42 is XD 
+[01/16 01:43:25    460s] Via Layer Id 43 is VV 
+[01/16 01:43:25    460s] 
+[01/16 01:43:25    460s] Trim Metal Layers:
+[01/16 01:43:25    460s]  lef metal Layer Id 1 mapped to tech Id 5 of Layer m1 
+[01/16 01:43:25    460s] Generating auto layer map file.
+[01/16 01:43:25    460s]  lef via Layer Id 1 mapped to tech Id 6 of Layer v1 
+[01/16 01:43:25    460s]  lef metal Layer Id 2 mapped to tech Id 7 of Layer m2 
+[01/16 01:43:25    460s]  lef via Layer Id 2 mapped to tech Id 8 of Layer ay 
+[01/16 01:43:25    460s]  lef metal Layer Id 3 mapped to tech Id 9 of Layer c1 
+[01/16 01:43:25    460s]  lef via Layer Id 3 mapped to tech Id 10 of Layer a1 
+[01/16 01:43:25    460s]  lef metal Layer Id 4 mapped to tech Id 11 of Layer c2 
+[01/16 01:43:25    460s]  lef via Layer Id 4 mapped to tech Id 12 of Layer a2 
+[01/16 01:43:25    460s]  lef metal Layer Id 5 mapped to tech Id 13 of Layer c3 
+[01/16 01:43:25    460s]  lef via Layer Id 5 mapped to tech Id 14 of Layer a3 
+[01/16 01:43:25    460s]  lef metal Layer Id 6 mapped to tech Id 15 of Layer c4 
+[01/16 01:43:25    460s]  lef via Layer Id 6 mapped to tech Id 16 of Layer wt 
+[01/16 01:43:25    460s]  lef metal Layer Id 7 mapped to tech Id 17 of Layer ba 
+[01/16 01:43:25    460s]  lef via Layer Id 7 mapped to tech Id 18 of Layer wa 
+[01/16 01:43:25    460s]  lef metal Layer Id 8 mapped to tech Id 19 of Layer bb 
+[01/16 01:43:25    460s]  lef via Layer Id 8 mapped to tech Id 20 of Layer yr 
+[01/16 01:43:25    460s]  lef metal Layer Id 9 mapped to tech Id 21 of Layer ja 
+[01/16 01:43:25    460s]  lef via Layer Id 9 mapped to tech Id 22 of Layer xd 
+[01/16 01:43:25    460s]  lef metal Layer Id 10 mapped to tech Id 23 of Layer jb 
+[01/16 01:43:25    460s]  lef via Layer Id 10 mapped to tech Id 24 of Layer vv 
+[01/16 01:43:25    460s]  lef metal Layer Id 11 mapped to tech Id 25 of Layer lb 
+[01/16 01:43:25    460s] Metal Layer Id 1 mapped to 5 
+[01/16 01:43:25    460s] Via Layer Id 1 mapped to 6 
+[01/16 01:43:25    460s] Metal Layer Id 2 mapped to 7 
+[01/16 01:43:25    460s] Via Layer Id 2 mapped to 8 
+[01/16 01:43:25    460s] Metal Layer Id 3 mapped to 9 
+[01/16 01:43:25    460s] Via Layer Id 3 mapped to 10 
+[01/16 01:43:25    460s] Metal Layer Id 4 mapped to 11 
+[01/16 01:43:25    460s] Via Layer Id 4 mapped to 12 
+[01/16 01:43:25    460s] Metal Layer Id 5 mapped to 13 
+[01/16 01:43:25    460s] Via Layer Id 5 mapped to 14 
+[01/16 01:43:25    460s] Metal Layer Id 6 mapped to 15 
+[01/16 01:43:25    460s] Via Layer Id 6 mapped to 16 
+[01/16 01:43:25    460s] Metal Layer Id 7 mapped to 17 
+[01/16 01:43:25    460s] Via Layer Id 7 mapped to 18 
+[01/16 01:43:25    460s] Metal Layer Id 8 mapped to 19 
+[01/16 01:43:25    460s] Via Layer Id 8 mapped to 20 
+[01/16 01:43:25    460s] Metal Layer Id 9 mapped to 21 
+[01/16 01:43:25    460s] Via Layer Id 9 mapped to 22 
+[01/16 01:43:25    460s] Metal Layer Id 10 mapped to 23 
+[01/16 01:43:25    460s] Via Layer Id 10 mapped to 24 
+[01/16 01:43:25    460s] Metal Layer Id 11 mapped to 25 
+[01/16 01:43:25    460s] eee: pegPreRouteEnableSaveRestoreRCPatterns:1, retVal:1, doesAnyTechFileNeedExtraction1
+[01/16 01:43:25    460s] eee: Reading patterns meta data.
+[01/16 01:43:25    460s] eee: PatternAvail:0, PreRoutePatternReadFailed:3
+[01/16 01:43:25    460s] Restore PreRoute Pattern Extraction data failed.
+[01/16 01:43:25    460s] Initializing preRoute extraction patterns for new vias... [01/16 01:43:26    461s] Metal Layer Id 1 is M1 
+[01/16 01:43:26    461s] Metal Layer Id 2 is M2 
+[01/16 01:43:26    461s] Metal Layer Id 3 is C1 
+[01/16 01:43:26    461s] Metal Layer Id 4 is C2 
+[01/16 01:43:26    461s] Metal Layer Id 5 is C3 
+[01/16 01:43:26    461s] Metal Layer Id 6 is C4 
+[01/16 01:43:26    461s] Metal Layer Id 7 is BA 
+[01/16 01:43:26    461s] Metal Layer Id 8 is BB 
+[01/16 01:43:26    461s] Metal Layer Id 9 is JA 
+[01/16 01:43:26    461s] Metal Layer Id 10 is JB 
+[01/16 01:43:26    461s] Metal Layer Id 11 is LB 
+[01/16 01:43:26    461s] Via Layer Id 33 is CA 
+[01/16 01:43:26    461s] Via Layer Id 34 is V1 
+[01/16 01:43:26    461s] Via Layer Id 35 is AY 
+[01/16 01:43:26    461s] Via Layer Id 36 is A1 
+[01/16 01:43:26    461s] Via Layer Id 37 is A2 
+[01/16 01:43:26    461s] Via Layer Id 38 is A3 
+[01/16 01:43:26    461s] Via Layer Id 39 is WT 
+[01/16 01:43:26    461s] Via Layer Id 40 is WA 
+[01/16 01:43:26    461s] Via Layer Id 41 is YR 
+[01/16 01:43:26    461s] Via Layer Id 42 is XD 
+[01/16 01:43:26    461s] Via Layer Id 43 is VV 
+[01/16 01:43:26    461s] 
+[01/16 01:43:26    461s] Trim Metal Layers:
+[01/16 01:43:26    461s]  lef metal Layer Id 1 mapped to tech Id 5 of Layer m1 
+Generating auto layer map file.
+[01/16 01:43:26    461s]  lef via Layer Id 1 mapped to tech Id 6 of Layer v1 
+[01/16 01:43:26    461s]  lef metal Layer Id 2 mapped to tech Id 7 of Layer m2 
+[01/16 01:43:26    461s]  lef via Layer Id 2 mapped to tech Id 8 of Layer ay 
+[01/16 01:43:26    461s]  lef metal Layer Id 3 mapped to tech Id 9 of Layer c1 
+[01/16 01:43:26    461s]  lef via Layer Id 3 mapped to tech Id 10 of Layer a1 
+[01/16 01:43:26    461s]  lef metal Layer Id 4 mapped to tech Id 11 of Layer c2 
+[01/16 01:43:26    461s]  lef via Layer Id 4 mapped to tech Id 12 of Layer a2 
+[01/16 01:43:26    461s]  lef metal Layer Id 5 mapped to tech Id 13 of Layer c3 
+[01/16 01:43:26    461s]  lef via Layer Id 5 mapped to tech Id 14 of Layer a3 
+[01/16 01:43:26    461s]  lef metal Layer Id 6 mapped to tech Id 15 of Layer c4 
+[01/16 01:43:26    461s]  lef via Layer Id 6 mapped to tech Id 16 of Layer wt 
+[01/16 01:43:26    461s]  lef metal Layer Id 7 mapped to tech Id 17 of Layer ba 
+[01/16 01:43:26    461s]  lef via Layer Id 7 mapped to tech Id 18 of Layer wa 
+[01/16 01:43:26    461s]  lef metal Layer Id 8 mapped to tech Id 19 of Layer bb 
+[01/16 01:43:26    461s]  lef via Layer Id 8 mapped to tech Id 20 of Layer yr 
+[01/16 01:43:26    461s]  lef metal Layer Id 9 mapped to tech Id 21 of Layer ja 
+[01/16 01:43:26    461s]  lef via Layer Id 9 mapped to tech Id 22 of Layer xd 
+[01/16 01:43:26    461s]  lef metal Layer Id 10 mapped to tech Id 23 of Layer jb 
+[01/16 01:43:26    461s]  lef via Layer Id 10 mapped to tech Id 24 of Layer vv 
+[01/16 01:43:26    461s]  lef metal Layer Id 11 mapped to tech Id 25 of Layer lb 
+[01/16 01:43:26    461s] Metal Layer Id 1 mapped to 5 
+[01/16 01:43:26    461s] Via Layer Id 1 mapped to 6 
+[01/16 01:43:26    461s] Metal Layer Id 2 mapped to 7 
+[01/16 01:43:26    461s] Via Layer Id 2 mapped to 8 
+[01/16 01:43:26    461s] Metal Layer Id 3 mapped to 9 
+[01/16 01:43:26    461s] Via Layer Id 3 mapped to 10 
+[01/16 01:43:26    461s] Metal Layer Id 4 mapped to 11 
+[01/16 01:43:26    461s] Via Layer Id 4 mapped to 12 
+[01/16 01:43:26    461s] Metal Layer Id 5 mapped to 13 
+[01/16 01:43:26    461s] Via Layer Id 5 mapped to 14 
+[01/16 01:43:26    461s] Metal Layer Id 6 mapped to 15 
+[01/16 01:43:26    461s] Via Layer Id 6 mapped to 16 
+[01/16 01:43:26    461s] Metal Layer Id 7 mapped to 17 
+[01/16 01:43:26    461s] Via Layer Id 7 mapped to 18 
+[01/16 01:43:26    461s] Metal Layer Id 8 mapped to 19 
+[01/16 01:43:26    461s] Via Layer Id 8 mapped to 20 
+[01/16 01:43:26    461s] Metal Layer Id 9 mapped to 21 
+[01/16 01:43:26    461s] Via Layer Id 9 mapped to 22 
+[01/16 01:43:26    461s] Metal Layer Id 10 mapped to 23 
+[01/16 01:43:26    461s] Via Layer Id 10 mapped to 24 
+[01/16 01:43:26    461s] Metal Layer Id 11 mapped to 25 
+[01/16 01:43:28    462s] Metal Layer Id 1 is M1 
+[01/16 01:43:28    462s] Metal Layer Id 2 is M2 
+[01/16 01:43:28    462s] Metal Layer Id 3 is C1 
+[01/16 01:43:28    462s] Metal Layer Id 4 is C2 
+[01/16 01:43:28    462s] Metal Layer Id 5 is C3 
+[01/16 01:43:28    462s] Metal Layer Id 6 is C4 
+[01/16 01:43:28    462s] Metal Layer Id 7 is BA 
+[01/16 01:43:28    462s] Metal Layer Id 8 is BB 
+[01/16 01:43:28    462s] Metal Layer Id 9 is JA 
+[01/16 01:43:28    462s] Metal Layer Id 10 is JB 
+[01/16 01:43:28    462s] Metal Layer Id 11 is LB 
+[01/16 01:43:28    462s] Via Layer Id 33 is CA 
+[01/16 01:43:28    462s] Via Layer Id 34 is V1 
+[01/16 01:43:28    462s] Via Layer Id 35 is AY 
+[01/16 01:43:28    462s] Via Layer Id 36 is A1 
+[01/16 01:43:28    462s] Via Layer Id 37 is A2 
+[01/16 01:43:28    462s] Via Layer Id 38 is A3 
+[01/16 01:43:28    462s] Via Layer Id 39 is WT 
+[01/16 01:43:28    462s] Via Layer Id 40 is WA 
+[01/16 01:43:28    462s] Via Layer Id 41 is YR 
+[01/16 01:43:28    462s] Via Layer Id 42 is XD 
+[01/16 01:43:28    462s] Via Layer Id 43 is VV 
+[01/16 01:43:28    462s] 
+[01/16 01:43:28    462s] Trim Metal Layers:
+[01/16 01:43:28    462s]  lef metal Layer Id 1 mapped to tech Id 5 of Layer m1 
+[01/16 01:43:28    462s] Generating auto layer map file.
+[01/16 01:43:28    462s]  lef via Layer Id 1 mapped to tech Id 6 of Layer v1 
+[01/16 01:43:28    462s]  lef metal Layer Id 2 mapped to tech Id 7 of Layer m2 
+[01/16 01:43:28    462s]  lef via Layer Id 2 mapped to tech Id 8 of Layer ay 
+[01/16 01:43:28    462s]  lef metal Layer Id 3 mapped to tech Id 9 of Layer c1 
+[01/16 01:43:28    462s]  lef via Layer Id 3 mapped to tech Id 10 of Layer a1 
+[01/16 01:43:28    462s]  lef metal Layer Id 4 mapped to tech Id 11 of Layer c2 
+[01/16 01:43:28    462s]  lef via Layer Id 4 mapped to tech Id 12 of Layer a2 
+[01/16 01:43:28    462s]  lef metal Layer Id 5 mapped to tech Id 13 of Layer c3 
+[01/16 01:43:28    462s]  lef via Layer Id 5 mapped to tech Id 14 of Layer a3 
+[01/16 01:43:28    462s]  lef metal Layer Id 6 mapped to tech Id 15 of Layer c4 
+[01/16 01:43:28    462s]  lef via Layer Id 6 mapped to tech Id 16 of Layer wt 
+[01/16 01:43:28    462s]  lef metal Layer Id 7 mapped to tech Id 17 of Layer ba 
+[01/16 01:43:28    462s]  lef via Layer Id 7 mapped to tech Id 18 of Layer wa 
+[01/16 01:43:28    462s]  lef metal Layer Id 8 mapped to tech Id 19 of Layer bb 
+[01/16 01:43:28    462s]  lef via Layer Id 8 mapped to tech Id 20 of Layer yr 
+[01/16 01:43:28    462s]  lef metal Layer Id 9 mapped to tech Id 21 of Layer ja 
+[01/16 01:43:28    462s]  lef via Layer Id 9 mapped to tech Id 22 of Layer xd 
+[01/16 01:43:28    462s]  lef metal Layer Id 10 mapped to tech Id 23 of Layer jb 
+[01/16 01:43:28    462s]  lef via Layer Id 10 mapped to tech Id 24 of Layer vv 
+[01/16 01:43:28    462s]  lef metal Layer Id 11 mapped to tech Id 25 of Layer lb 
+[01/16 01:43:28    462s] Metal Layer Id 1 mapped to 5 
+[01/16 01:43:28    462s] Via Layer Id 1 mapped to 6 
+[01/16 01:43:28    462s] Metal Layer Id 2 mapped to 7 
+[01/16 01:43:28    462s] Via Layer Id 2 mapped to 8 
+[01/16 01:43:28    462s] Metal Layer Id 3 mapped to 9 
+[01/16 01:43:28    462s] Via Layer Id 3 mapped to 10 
+[01/16 01:43:28    462s] Metal Layer Id 4 mapped to 11 
+[01/16 01:43:28    462s] Via Layer Id 4 mapped to 12 
+[01/16 01:43:28    462s] Metal Layer Id 5 mapped to 13 
+[01/16 01:43:28    462s] Via Layer Id 5 mapped to 14 
+[01/16 01:43:28    462s] Metal Layer Id 6 mapped to 15 
+[01/16 01:43:28    462s] Via Layer Id 6 mapped to 16 
+[01/16 01:43:28    462s] Metal Layer Id 7 mapped to 17 
+[01/16 01:43:28    462s] Via Layer Id 7 mapped to 18 
+[01/16 01:43:28    462s] Metal Layer Id 8 mapped to 19 
+[01/16 01:43:28    462s] Via Layer Id 8 mapped to 20 
+[01/16 01:43:28    462s] Metal Layer Id 9 mapped to 21 
+[01/16 01:43:28    462s] Via Layer Id 9 mapped to 22 
+[01/16 01:43:28    462s] Metal Layer Id 10 mapped to 23 
+[01/16 01:43:28    462s] Via Layer Id 10 mapped to 24 
+[01/16 01:43:28    462s] Metal Layer Id 11 mapped to 25 
+[01/16 01:43:29    464s] Metal Layer Id 1 is M1 
+[01/16 01:43:29    464s] Metal Layer Id 2 is M2 
+[01/16 01:43:29    464s] Metal Layer Id 3 is C1 
+[01/16 01:43:29    464s] Metal Layer Id 4 is C2 
+[01/16 01:43:29    464s] Metal Layer Id 5 is C3 
+[01/16 01:43:29    464s] Metal Layer Id 6 is C4 
+[01/16 01:43:29    464s] Metal Layer Id 7 is BA 
+[01/16 01:43:29    464s] Metal Layer Id 8 is BB 
+[01/16 01:43:29    464s] Metal Layer Id 9 is JA 
+[01/16 01:43:29    464s] Metal Layer Id 10 is JB 
+[01/16 01:43:29    464s] Metal Layer Id 11 is LB 
+[01/16 01:43:29    464s] Via Layer Id 33 is CA 
+[01/16 01:43:29    464s] Via Layer Id 34 is V1 
+[01/16 01:43:29    464s] Via Layer Id 35 is AY 
+[01/16 01:43:29    464s] Via Layer Id 36 is A1 
+[01/16 01:43:29    464s] Via Layer Id 37 is A2 
+[01/16 01:43:29    464s] Via Layer Id 38 is A3 
+[01/16 01:43:29    464s] Via Layer Id 39 is WT 
+[01/16 01:43:29    464s] Via Layer Id 40 is WA 
+[01/16 01:43:29    464s] Via Layer Id 41 is YR 
+[01/16 01:43:29    464s] Via Layer Id 42 is XD 
+[01/16 01:43:29    464s] Via Layer Id 43 is VV 
+[01/16 01:43:29    464s] 
+[01/16 01:43:29    464s] Trim Metal Layers:
+[01/16 01:43:29    464s]  lef metal Layer Id 1 mapped to tech Id 5 of Layer m1 
+[01/16 01:43:29    464s] Generating auto layer map file.
+[01/16 01:43:29    464s]  lef via Layer Id 1 mapped to tech Id 6 of Layer v1 
+[01/16 01:43:29    464s]  lef metal Layer Id 2 mapped to tech Id 7 of Layer m2 
+[01/16 01:43:29    464s]  lef via Layer Id 2 mapped to tech Id 8 of Layer ay 
+[01/16 01:43:29    464s]  lef metal Layer Id 3 mapped to tech Id 9 of Layer c1 
+[01/16 01:43:29    464s]  lef via Layer Id 3 mapped to tech Id 10 of Layer a1 
+[01/16 01:43:29    464s]  lef metal Layer Id 4 mapped to tech Id 11 of Layer c2 
+[01/16 01:43:29    464s]  lef via Layer Id 4 mapped to tech Id 12 of Layer a2 
+[01/16 01:43:29    464s]  lef metal Layer Id 5 mapped to tech Id 13 of Layer c3 
+[01/16 01:43:29    464s]  lef via Layer Id 5 mapped to tech Id 14 of Layer a3 
+[01/16 01:43:29    464s]  lef metal Layer Id 6 mapped to tech Id 15 of Layer c4 
+[01/16 01:43:29    464s]  lef via Layer Id 6 mapped to tech Id 16 of Layer wt 
+[01/16 01:43:29    464s]  lef metal Layer Id 7 mapped to tech Id 17 of Layer ba 
+[01/16 01:43:29    464s]  lef via Layer Id 7 mapped to tech Id 18 of Layer wa 
+[01/16 01:43:29    464s]  lef metal Layer Id 8 mapped to tech Id 19 of Layer bb 
+[01/16 01:43:29    464s]  lef via Layer Id 8 mapped to tech Id 20 of Layer yr 
+[01/16 01:43:29    464s]  lef metal Layer Id 9 mapped to tech Id 21 of Layer ja 
+[01/16 01:43:29    464s]  lef via Layer Id 9 mapped to tech Id 22 of Layer xd 
+[01/16 01:43:29    464s]  lef metal Layer Id 10 mapped to tech Id 23 of Layer jb 
+[01/16 01:43:29    464s]  lef via Layer Id 10 mapped to tech Id 24 of Layer vv 
+[01/16 01:43:29    464s]  lef metal Layer Id 11 mapped to tech Id 25 of Layer lb 
+[01/16 01:43:29    464s] Metal Layer Id 1 mapped to 5 
+[01/16 01:43:29    464s] Via Layer Id 1 mapped to 6 
+[01/16 01:43:29    464s] Metal Layer Id 2 mapped to 7 
+[01/16 01:43:29    464s] Via Layer Id 2 mapped to 8 
+[01/16 01:43:29    464s] Metal Layer Id 3 mapped to 9 
+[01/16 01:43:29    464s] Via Layer Id 3 mapped to 10 
+[01/16 01:43:29    464s] Metal Layer Id 4 mapped to 11 
+[01/16 01:43:29    464s] Via Layer Id 4 mapped to 12 
+[01/16 01:43:29    464s] Metal Layer Id 5 mapped to 13 
+[01/16 01:43:29    464s] Via Layer Id 5 mapped to 14 
+[01/16 01:43:29    464s] Metal Layer Id 6 mapped to 15 
+[01/16 01:43:29    464s] Via Layer Id 6 mapped to 16 
+[01/16 01:43:29    464s] Metal Layer Id 7 mapped to 17 
+[01/16 01:43:29    464s] Via Layer Id 7 mapped to 18 
+[01/16 01:43:29    464s] Metal Layer Id 8 mapped to 19 
+[01/16 01:43:29    464s] Via Layer Id 8 mapped to 20 
+[01/16 01:43:29    464s] Metal Layer Id 9 mapped to 21 
+[01/16 01:43:29    464s] Via Layer Id 9 mapped to 22 
+[01/16 01:43:29    464s] Metal Layer Id 10 mapped to 23 
+[01/16 01:43:29    464s] Via Layer Id 10 mapped to 24 
+[01/16 01:43:29    464s] Metal Layer Id 11 mapped to 25 
+[01/16 01:43:30    464s] Completed (cpu: 0:00:05.6 real: 0:00:06.0)
+[01/16 01:43:30    464s] % Begin Load power constraints ... (date=01/16 01:43:30, mem=4170.8M)
+[01/16 01:43:30    464s] source /home/shitongg/IL2225/SiLagoNN/phy/db/flat/drra_wrapper.dat/drra_wrapper_power_constraints.tcl
+[01/16 01:43:30    464s] 'set_default_switching_activity' finished successfully.
+[01/16 01:43:30    464s] % End Load power constraints ... (date=01/16 01:43:30, total cpu=0:00:00.2, real=0:00:00.0, peak res=4171.6M, current mem=4171.6M)
+[01/16 01:43:32    466s] % Begin load AAE data ... (date=01/16 01:43:32, mem=4202.6M)
+[01/16 01:43:35    470s] AAE DB initialization (MEM=5155.52 CPU=0:00:02.9 REAL=0:00:02.0) 
+[01/16 01:43:36    470s] % End load AAE data ... (date=01/16 01:43:35, total cpu=0:00:04.0, real=0:00:04.0, peak res=4414.4M, current mem=4414.4M)
+[01/16 01:43:36    470s] Restoring CCOpt config...
+[01/16 01:43:36    470s] 
+[01/16 01:43:36    470s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[01/16 01:43:36    470s] Summary for sequential cells identification: 
+[01/16 01:43:36    470s]   Identified SBFF number: 75
+[01/16 01:43:36    470s]   Identified MBFF number: 0
+[01/16 01:43:36    470s]   Identified SB Latch number: 0
+[01/16 01:43:36    470s]   Identified MB Latch number: 0
+[01/16 01:43:36    470s]   Not identified SBFF number: 0
+[01/16 01:43:36    470s]   Not identified MBFF number: 0
+[01/16 01:43:36    470s]   Not identified SB Latch number: 0
+[01/16 01:43:36    470s]   Not identified MB Latch number: 0
+[01/16 01:43:36    470s]   Number of sequential cells which are not FFs: 26
+[01/16 01:43:36    470s]  Visiting view : AVF_RCWORST
+[01/16 01:43:36    470s]    : PowerDomain = none : Weighted F : unweighted  = 10.60 (1.000) with rcCorner = 0
+[01/16 01:43:36    470s]    : PowerDomain = none : Weighted F : unweighted  = 7.90 (1.000) with rcCorner = -1
+[01/16 01:43:36    470s]  Visiting view : AVF_RCBEST
+[01/16 01:43:36    470s]    : PowerDomain = none : Weighted F : unweighted  = 7.70 (1.000) with rcCorner = 1
+[01/16 01:43:36    470s]    : PowerDomain = none : Weighted F : unweighted  = 5.60 (1.000) with rcCorner = -1
+[01/16 01:43:36    470s]  Visiting view : AVF_RCTYP
+[01/16 01:43:36    470s]    : PowerDomain = none : Weighted F : unweighted  = 7.20 (1.000) with rcCorner = 2
+[01/16 01:43:36    470s]    : PowerDomain = none : Weighted F : unweighted  = 5.30 (1.000) with rcCorner = -1
+[01/16 01:43:36    470s] 
+[01/16 01:43:36    470s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[01/16 01:43:36    470s]   Extracting original clock gating for clk...
+[01/16 01:43:38    473s]     clock_tree clk contains 77199 sinks and 0 clock gates.
+[01/16 01:43:38    473s]   Extracting original clock gating for clk done.
+[01/16 01:43:39    473s]   The skew group clk/functional was created. It contains 77199 sinks and 1 sources.
+[01/16 01:43:39    474s]   The skew group clk/functional was created. It contains 77199 sinks and 1 sources.
+[01/16 01:43:39    474s] Restoring CCOpt config done.
+[01/16 01:43:39    474s] 
+[01/16 01:43:39    474s] TimeStamp Deleting Cell Server Begin ...
+[01/16 01:43:39    474s] 
+[01/16 01:43:39    474s] TimeStamp Deleting Cell Server End ...
+[01/16 01:43:39    474s] 
+[01/16 01:43:39    474s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[01/16 01:43:39    474s] Summary for sequential cells identification: 
+[01/16 01:43:39    474s]   Identified SBFF number: 75
+[01/16 01:43:39    474s]   Identified MBFF number: 0
+[01/16 01:43:39    474s]   Identified SB Latch number: 0
+[01/16 01:43:39    474s]   Identified MB Latch number: 0
+[01/16 01:43:39    474s]   Not identified SBFF number: 0
+[01/16 01:43:39    474s]   Not identified MBFF number: 0
+[01/16 01:43:39    474s]   Not identified SB Latch number: 0
+[01/16 01:43:39    474s]   Not identified MB Latch number: 0
+[01/16 01:43:39    474s]   Number of sequential cells which are not FFs: 26
+[01/16 01:43:39    474s] Total number of combinational cells: 808
+[01/16 01:43:39    474s] Total number of sequential cells: 101
+[01/16 01:43:39    474s] Total number of tristate cells: 4
+[01/16 01:43:39    474s] Total number of level shifter cells: 0
+[01/16 01:43:39    474s] Total number of power gating cells: 0
+[01/16 01:43:39    474s] Total number of isolation cells: 0
+[01/16 01:43:39    474s] Total number of power switch cells: 0
+[01/16 01:43:39    474s] Total number of pulse generator cells: 0
+[01/16 01:43:39    474s] Total number of always on buffers: 0
+[01/16 01:43:39    474s] Total number of retention cells: 0
+[01/16 01:43:39    474s] Total number of physical cells: 46
+[01/16 01:43:39    474s] List of usable buffers:[01/16 01:43:39    474s] 
+[01/16 01:43:39    474s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+ SC8T_BUFX0P5_A_CSC28L SC8T_BUFX0P5_CSC28L SC8T_BUFX10_CSC28L SC8T_BUFX12_CSC28L SC8T_BUFX16_CSC28L SC8T_BUFX1P5_CSC28L SC8T_BUFX1_A_CSC28L SC8T_BUFX1_MR_CSC28L SC8T_BUFX1_CSC28L SC8T_BUFX20_CSC28L SC8T_BUFX24_CSC28L SC8T_BUFX2_CSC28L SC8T_BUFX3_CSC28L SC8T_BUFX4_MR_CSC28L SC8T_BUFX4_CSC28L SC8T_BUFX6_CSC28L SC8T_BUFX8_CSC28L SC8T_CKBUFX10_CSC28L SC8T_CKBUFX12_CSC28L SC8T_CKBUFX16_CSC28L SC8T_CKBUFX1_MR_CSC28L SC8T_CKBUFX1_CSC28L SC8T_CKBUFX20_CSC28L SC8T_CKBUFX24_CSC28L SC8T_CKBUFX2_CSC28L SC8T_CKBUFX4_CSC28L SC8T_CKBUFX6_CSC28L SC8T_CKBUFX8_CSC28L
+[01/16 01:43:39    474s] Total number of usable buffers: 28
+[01/16 01:43:39    474s] List of unusable buffers:
+[01/16 01:43:39    474s] Total number of unusable buffers: 0
+[01/16 01:43:39    474s] List of usable inverters: SC8T_INVX0P5_CSC28L SC8T_INVX10_CSC28L SC8T_INVX12_CSC28L SC8T_INVX16_CSC28L SC8T_INVX1P5_CSC28L SC8T_INVX1_3CPP_CSC28L SC8T_INVX1_MR_CSC28L SC8T_INVX1_CSC28L SC8T_INVX20_CSC28L SC8T_INVX24_CSC28L SC8T_INVX2_CSC28L SC8T_INVX3_CSC28L SC8T_INVX4_CSC28L SC8T_INVX6_CSC28L SC8T_INVX8_CSC28L SC8T_CKINVX10_CSC28L SC8T_CKINVX12_CSC28L SC8T_CKINVX16_CSC28L SC8T_CKINVX1_MR_CSC28L SC8T_CKINVX1_CSC28L SC8T_CKINVX20_CSC28L SC8T_CKINVX24_CSC28L SC8T_CKINVX2_CSC28L SC8T_CKINVX4_CSC28L SC8T_CKINVX6_CSC28L SC8T_CKINVX8_CSC28L
+[01/16 01:43:39    474s] Total number of usable inverters: 26
+[01/16 01:43:39    474s] List of unusable inverters:
+[01/16 01:43:39    474s] Total number of unusable inverters: 0
+[01/16 01:43:39    474s] List of identified usable delay cells: SC8T_DLY100X1_CSC28L SC8T_DLY40X1_CSC28L SC8T_DLY60X1_CSC28L SC8T_DLY80X1_CSC28L
+[01/16 01:43:39    474s] Total number of identified usable delay cells: 4
+[01/16 01:43:39    474s] List of identified unusable delay cells:
+[01/16 01:43:39    474s] Total number of identified unusable delay cells: 0
+[01/16 01:43:39    474s] 
+[01/16 01:43:39    474s] TimeStamp Deleting Cell Server Begin ...
+[01/16 01:43:39    474s] 
+[01/16 01:43:39    474s] TimeStamp Deleting Cell Server End ...
+[01/16 01:43:39    474s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version . They will be removed in the next release. 
+[01/16 01:43:39    474s] timing_enable_separate_device_slew_effect_sensitivities
+[01/16 01:43:40    474s] #% End load design ... (date=01/16 01:43:39, total cpu=0:07:25, real=0:05:22, peak res=4559.1M, current mem=4492.3M)
+[01/16 01:43:40    474s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[01/16 01:43:41    475s] 
+[01/16 01:43:41    475s] *** Summary of all messages that are not suppressed in this session:
+[01/16 01:43:41    475s] Severity  ID               Count  Summary                                  
+[01/16 01:43:41    475s] WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[01/16 01:43:41    475s] WARNING   IMPLF-201          944  Pin '%s' in macro '%s' has no ANTENNADIF...
+[01/16 01:43:41    475s] WARNING   IMPLF-378            6  The spacing for cell edge type '%s' and ...
+[01/16 01:43:41    475s] WARNING   IMPDBTCL-321         1  The attribute '%s' still works but will ...
+[01/16 01:43:41    475s] WARNING   NRFL-374             6  %s spacing table is not monotonically in...
+[01/16 01:43:41    475s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[01/16 01:43:41    475s] WARNING   IMPUDM-33            3  Global variable "%s" is obsolete and wil...
+[01/16 01:43:41    475s] WARNING   TECHLIB-302        141  No function defined for cell '%s'. The c...
+[01/16 01:43:41    475s] *** Message Summary: 1103 warning(s), 0 error(s)
+[01/16 01:43:41    475s] 
+[01/16 01:43:41    475s] 0
+[01/16 01:43:41    475s] @innovus 2> gui_select -point {265.98200 357.89100}
+[01/16 01:43:42    478s] @innovus 3> gui_select -point {124.11700 468.37000}
+[01/16 01:43:42    478s] @innovus 4> gui_select -point {232.08500 457.07100}
+[01/16 01:43:42    478s] @innovus 5> gui_select -point {540.92400 420.66300}
+[01/16 01:43:42    478s] @innovus 6> gui_select -point {696.59800 489.71200}
+[01/16 01:43:42    478s] @innovus 7> gui_select -point {149.22600 351.61300}
+[01/16 01:43:42    478s] @innovus 8> view_next 
+[01/16 01:43:42    478s] @innovus 9> gui_select -rect {0.05200 0.08100 0.04900 0.06900}
+[01/16 01:44:26    488s] @innovus 10> set_layer_preference node_overlay -is_visible 1
+[01/16 01:44:36    490s] gui_set_power_rail_display -plot none
+[01/16 01:44:36    490s] 
+[01/16 01:44:36    490s] 
+[01/16 01:44:36    491s] 
+[01/16 01:44:36    491s] 
+[01/16 01:44:36    491s] 
+[01/16 01:44:36    491s] 
+[01/16 01:44:36    491s] @innovus 11> set_layer_preference node_overlay -is_selectable 0
+[01/16 01:44:40    495s] @innovus 12> set_layer_preference node_overlay -is_selectable 1
+[01/16 01:44:42    497s] @innovus 13> set_layer_preference node_overlay -is_visible 0
+[01/16 01:44:47    501s] @innovus 14> set_layer_preference node_overlay -is_visible 1
+[01/16 01:44:48    503s] @innovus 15> set_layer_preference node_track -is_visible 1
+[01/16 01:44:49    508s] @innovus 16> set_layer_preference node_track -is_visible 0
+[01/16 01:44:51    511s] @innovus 17> set_layer_preference node_overlay -is_visible 0
+[01/16 01:44:52    514s] @innovus 18> set_layer_preference node_overlay -is_visible 1
+[01/16 01:44:54    516s] @innovus 19> set_layer_preference node_overlay -is_visible 0
+[01/16 01:44:57    521s] @innovus 20> exit
+
+[01/16 01:50:08    577s] 
+[01/16 01:50:08    577s] *** Summary of all messages that are not suppressed in this session:
+[01/16 01:50:08    577s] *** Memory Usage v#1 (Current mem = 5757.355M, initial mem = 494.961M) ***
+[01/16 01:50:08    577s] Severity  ID               Count  Summary                                  
+[01/16 01:50:08    577s] WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[01/16 01:50:08    577s] WARNING   IMPLF-201          944  Pin '%s' in macro '%s' has no ANTENNADIF...
+[01/16 01:50:08    577s] WARNING   IMPLF-378            6  The spacing for cell edge type '%s' and ...
+[01/16 01:50:08    577s] WARNING   IMPDBTCL-321         1  The attribute '%s' still works but will ...
+[01/16 01:50:08    577s] WARNING   IMPOPT-801           1  Genus executable not found in PATH%s. In...
+[01/16 01:50:08    577s] WARNING   NRFL-374             6  %s spacing table is not monotonically in...
+[01/16 01:50:08    577s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[01/16 01:50:08    577s] WARNING   IMPUDM-33            3  Global variable "%s" is obsolete and wil...
+[01/16 01:50:08    577s] WARNING   TECHLIB-302        141  No function defined for cell '%s'. The c...
+[01/16 01:50:08    577s] *** Message Summary: 1104 warning(s), 0 error(s)
+[01/16 01:50:08    577s] 
+[01/16 01:50:08    577s] --- Ending "Innovus" (totcpu=0:09:38, real=0:12:35, mem=5757.4M) ---

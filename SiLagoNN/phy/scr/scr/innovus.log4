@@ -1,0 +1,761 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.19-s058_1, built Thu Apr 4 09:59:17 PDT 2024
+Options:	-stylus 
+Date:		Sun Jan 18 07:02:24 2026
+Host:		il2225ht25_shitongg (x86_64 w/Linux 5.15.0-164-generic) (12cores*48cpus*Intel(R) Xeon(R) CPU E7-8857 v2 @ 3.00GHz 30720KB)
+OS:		Rocky Linux 8.10 (Green Obsidian)
+
+License:
+		[07:02:24.290171] Configured Lic search path (21.01-s002): 3000@lic08.ug.kth.se:27020@lic04.ug.kth.se:27020@lic05.ug.kth.se
+
+		invs	Innovus Implementation System	21.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+
+
+**WARN: (IMPOPT-801):	Genus executable not found in PATH. Install Genus, add the path to the genus executable in the PATH variable and rerun Innovus.
+Create and set the environment variable TMPDIR to /tmp/innovus_temp_2629991_il2225ht25_shitongg_shitongg_xEZ2nT.
+
+Change the soft stacksize limit to 0.2%RAM (6192 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+@innovus 1> read_db ../db/hierarchical/drra_wrapper.dat/
+#% Begin load design ... (date=01/18 07:03:23, mem=956.5M)
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+Set Using Default Delay Limit as 1000.
+Set Default Input Pin Transition as 0.1 ps.
+Loading design 'drra_wrapper' saved by 'Innovus' '21.19-s058_1' on 'Sat Jan 17 23:55:52 2026'.
+Reading LIBSET_WC timing library '/opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'SC8T_TAPZBX8_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'SC8T_TAPX8_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'SC8T_NOM1COLCAPPX1_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'SC8T_NOM1COLCAPNX1_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'SC8T_FILLX8_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'SC8T_FILLX64_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'SC8T_FILLX5_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'SC8T_FILLX4_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'SC8T_FILLX3_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'SC8T_FILLX32_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'SC8T_FILLX2_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'SC8T_FILLX1_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'SC8T_FILLX16_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'SC8T_FILLX128_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'SC8T_CONCAVEPRX9_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'SC8T_CONCAVEPRX11_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'SC8T_CONCAVEPLX9_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'SC8T_CONCAVEPLX11_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'SC8T_CONCAVENRX9_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+**WARN: (TECHLIB-302):	No function defined for cell 'SC8T_CONCAVENRX11_CSC28L'. The cell will only be used for analysis. (File /opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz)
+Message <TECHLIB-302> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+Read 959 cells in library 'GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C' 
+Reading LIBSET_BC timing library '/opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_FFG_0P72V_0P00V_0P00V_0P00V_M40C_ccs.lib.gz' ...
+Read 959 cells in library 'GF22FDX_SC8T_104CPP_BASE_CSC28L_FFG_0P72V_0P00V_0P00V_0P00V_M40C' 
+cond_typ cond_worst cond_best
+rc_typ rc_best rc_worst
+
+Loading LEF file /home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/libs/lef/22FDSOI_10M_2Mx_4Cx_2Bx_2Jx_LB_104cpp_tech.lef ...
+
+Loading LEF file /home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/libs/lef/GF22FDX_SC8T_104CPP_BASE_CSC28L.lef ...
+**WARN: (IMPLF-378):	The spacing for cell edge type 'SC8T_104CPP_BASE_CSC_SOURCE' and 'SC8T_104CPP_BASE_CSC_SOURCE' is already defined. It will be overwritten by the new definition in LEF file '/home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/libs/lef/GF22FDX_SC8T_104CPP_BASE_CSC28L.lef'.
+If it's defined multiple times for the same pair of types, only the last one
+will be kept. Check all definitions in all LEF files to remove any duplicated
+definitions to avoid this warning message.
+**WARN: (IMPLF-378):	The spacing for cell edge type 'SC8T_104CPP_BASE_CSC_DRAIN' and 'SC8T_104CPP_BASE_CSC_SOURCE' is already defined. It will be overwritten by the new definition in LEF file '/home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/libs/lef/GF22FDX_SC8T_104CPP_BASE_CSC28L.lef'.
+If it's defined multiple times for the same pair of types, only the last one
+will be kept. Check all definitions in all LEF files to remove any duplicated
+definitions to avoid this warning message.
+**WARN: (IMPLF-378):	The spacing for cell edge type 'SC8T_104CPP_BASE_CSC_DRAIN' and 'SC8T_104CPP_BASE_CSC_DRAIN' is already defined. It will be overwritten by the new definition in LEF file '/home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/libs/lef/GF22FDX_SC8T_104CPP_BASE_CSC28L.lef'.
+If it's defined multiple times for the same pair of types, only the last one
+will be kept. Check all definitions in all LEF files to remove any duplicated
+definitions to avoid this warning message.
+**WARN: (IMPLF-378):	The spacing for cell edge type 'SC8T_104CPP_BASE_CSC_SOURCE2CPP' and 'SC8T_104CPP_BASE_CSC_SOURCE2CPP' is already defined. It will be overwritten by the new definition in LEF file '/home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/libs/lef/GF22FDX_SC8T_104CPP_BASE_CSC28L.lef'.
+If it's defined multiple times for the same pair of types, only the last one
+will be kept. Check all definitions in all LEF files to remove any duplicated
+definitions to avoid this warning message.
+**WARN: (IMPLF-378):	The spacing for cell edge type 'SC8T_104CPP_BASE_CSC_SOURCE' and 'SC8T_104CPP_BASE_CSC_SOURCE2CPP' is already defined. It will be overwritten by the new definition in LEF file '/home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/libs/lef/GF22FDX_SC8T_104CPP_BASE_CSC28L.lef'.
+If it's defined multiple times for the same pair of types, only the last one
+will be kept. Check all definitions in all LEF files to remove any duplicated
+definitions to avoid this warning message.
+**WARN: (IMPLF-378):	The spacing for cell edge type 'SC8T_104CPP_BASE_CSC_SOURCE2CPP' and 'SC8T_104CPP_BASE_CSC_DRAIN' is already defined. It will be overwritten by the new definition in LEF file '/home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/libs/lef/GF22FDX_SC8T_104CPP_BASE_CSC28L.lef'.
+If it's defined multiple times for the same pair of types, only the last one
+will be kept. Check all definitions in all LEF files to remove any duplicated
+definitions to avoid this warning message.
+Set DBUPerIGU to M1 pitch 104.
+[07:06:07.064785] Periodic Lic check successful
+[07:06:07.064808] Feature usage summary:
+[07:06:07.064808] Innovus_Impl_System
+[07:06:07.064810] Innovus_20nm_Opt
+
+This command "read_db ../db/hierarchical/drra_wrapper.dat/" required an extra checkout of license invs_20nm.
+Additional license(s) checked out: 1 'Innovus_20nm_Opt' license(s)
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XOR3X8_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XOR3X4_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XOR3X2_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XOR3X1_MR_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XOR3X1_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XOR2X8_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XOR2X4_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XOR2X2_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XOR2X1_MR_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XOR2X1_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XOR2X0P5_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XNR3X8_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XNR3X4_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XNR3X2_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XNR3X1_MR_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XNR3X1_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XNR2X8_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XNR2X4_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XNR2X2_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Z' in macro 'SC8T_XNR2X1_MR_CSC28L' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'SC8T_ANTENNAX11_CSC28L' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from /home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/viewDefinition.tcl
+% Begin Load netlist data ... (date=01/18 07:06:07, mem=1038.5M)
+*** Begin netlist parsing (mem=1687.4M) ***
+Created 959 new cells from 2 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilogBinary netlist '/home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/drra_wrapper.v.bin'
+
+*** Memory Usage v#1 (Current mem = 1864.387M, initial mem = 494.961M) ***
+*** End netlist parsing (cpu=0:00:02.1, real=0:00:02.0, mem=1864.4M) ***
+% End Load netlist data ... (date=01/18 07:06:10, total cpu=0:00:02.2, real=0:00:02.0, peak res=1359.2M, current mem=1359.2M)
+Set top cell to drra_wrapper.
+Hooked 1918 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell drra_wrapper ...
+*** Netlist is unique.
+** info: there are 5263 modules.
+** info: there are 600428 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 2497.801M, initial mem = 494.961M) ***
+*info: set bottom ioPad orient R0
+
+Honor LEF defined pitches for advanced node
+Start create_tracks
+Loading preference file /home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/gui.pref.tcl ...
+Effort level <high> specified for reg2reg path_group
+Slack adjustment of -0 applied on reg2reg path_group
+add_rings command will ignore shorts while creating rings.
+add_rings command will disallow rings to go over rows.
+add_rings command will consider rows while creating rings.
+The ring targets are set to core/block ring wires.
+**WARN: (IMPTB-413):	Option "budget_virtual_opt_engine" of the set_db command doesn't regenerate Timing Graph, if it already exists.
+add_stripes will allow jog to connect padcore ring and block ring.
+
+Stripes will not extend to closest target.
+When breaking rings, the power planner will consider the existence of blocks.
+add_stripes will break automatically at non-default domains when generating global stripes over the core area or default domain.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+Stripes will not be created over regions without power planning wires.
+Offset for stripe breaking is set to 0.
+Stripes will stop at the boundary of the specified area.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Change floorplan default-technical-site to 'SC8T_104CPP_CMOS22FDX'.
+
+Loading LEF file /home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/drra_wrapper.lef.info.gz ...
+*Info: initialize multi-corner CTS.
+Reading LIBSET_TC timing library '/opt/pdk/gfip/22FDX-EXT/GF22FDX_SC8T_104CPP_BASE_CSC28L_FDK_RELV06R60/model/timing/ccs/GF22FDX_SC8T_104CPP_BASE_CSC28L_TT_0P80V_0P00V_0P00V_0P00V_25C_ccs.lib.gz' ...
+Read 959 cells in library 'GF22FDX_SC8T_104CPP_BASE_CSC28L_TT_0P80V_0P00V_0P00V_0P00V_25C' 
+Total number of combinational cells: 808
+Total number of sequential cells: 101
+Total number of tristate cells: 4
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 46
+List of usable buffers: SC8T_BUFX0P5_A_CSC28L SC8T_BUFX0P5_CSC28L SC8T_BUFX10_CSC28L SC8T_BUFX12_CSC28L SC8T_BUFX16_CSC28L SC8T_BUFX1P5_CSC28L SC8T_BUFX1_A_CSC28L SC8T_BUFX1_MR_CSC28L SC8T_BUFX1_CSC28L SC8T_BUFX20_CSC28L SC8T_BUFX24_CSC28L SC8T_BUFX2_CSC28L SC8T_BUFX3_CSC28L SC8T_BUFX4_MR_CSC28L SC8T_BUFX4_CSC28L SC8T_BUFX6_CSC28L SC8T_BUFX8_CSC28L SC8T_CKBUFX10_CSC28L SC8T_CKBUFX12_CSC28L SC8T_CKBUFX16_CSC28L SC8T_CKBUFX1_MR_CSC28L SC8T_CKBUFX1_CSC28L SC8T_CKBUFX20_CSC28L SC8T_CKBUFX24_CSC28L SC8T_CKBUFX2_CSC28L SC8T_CKBUFX4_CSC28L SC8T_CKBUFX6_CSC28L SC8T_CKBUFX8_CSC28L
+Total number of usable buffers: 28
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: SC8T_INVX0P5_CSC28L SC8T_INVX10_CSC28L SC8T_INVX12_CSC28L SC8T_INVX16_CSC28L SC8T_INVX1P5_CSC28L SC8T_INVX1_3CPP_CSC28L SC8T_INVX1_MR_CSC28L SC8T_INVX1_CSC28L SC8T_INVX20_CSC28L SC8T_INVX24_CSC28L SC8T_INVX2_CSC28L SC8T_INVX3_CSC28L SC8T_INVX4_CSC28L SC8T_INVX6_CSC28L SC8T_INVX8_CSC28L SC8T_CKINVX10_CSC28L SC8T_CKINVX12_CSC28L SC8T_CKINVX16_CSC28L SC8T_CKINVX1_MR_CSC28L SC8T_CKINVX1_CSC28L SC8T_CKINVX20_CSC28L SC8T_CKINVX24_CSC28L SC8T_CKINVX2_CSC28L SC8T_CKINVX4_CSC28L SC8T_CKINVX6_CSC28L SC8T_CKINVX8_CSC28L
+Total number of usable inverters: 26
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: SC8T_DLY100X1_CSC28L SC8T_DLY40X1_CSC28L SC8T_DLY60X1_CSC28L SC8T_DLY80X1_CSC28L
+Total number of identified usable delay cells: 4
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+Reading floorplan file - /home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/drra_wrapper.fp.gz (mem = 3040.2M).
+% Begin Load floorplan data ... (date=01/18 07:07:37, mem=2316.8M)
+*info: reset 651343 existing net BottomPreferredLayer and AvoidDetour
+Deleting old partition specification.
+Set FPlanBox to (0 0 1690000 430000)
+
+Honor LEF defined pitches for advanced node
+Start create_tracks
+ ... processed partition successfully.
+ ... processed partition successfully.
+ ... processed partition successfully.
+ ... processed partition successfully.
+ ... processed partition successfully.
+ ... processed partition successfully.
+ ... processed partition successfully.
+ ... processed partition successfully.
+ ... processed partition successfully.
+ ... processed partition successfully.
+ ... processed partition successfully.
+ ... processed partition successfully.
+ ... processed partition successfully.
+ ... processed partition successfully.
+ ... processed partition successfully.
+ ... processed partition successfully.
+ ... processed partition successfully.
+Reading binary special route file /home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/drra_wrapper.fp.spr.gz (Created by Innovus v21.19-s058_1 on Sat Jan 17 23:55:42 2026, version: 1)
+Ending "Read special route file" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2320.7M, current mem=2320.7M)
+Reading partition pin assignment from the file /home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/drra_wrapper.fp.ptn.
+Reading pin assignment for the partition Silago_bot_5.
+**WARN: (IMPPTN-845):	Could not load the pin information from file [/home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/drra_wrapper.fp.ptn] for partition [Silago_bot_5] because the file does not contain the complete information for any pin. Ensure that the file contains the complete information for the pins, and run the command again.
+Reading pin assignment for the partition Silago_bot_1.
+**WARN: (IMPPTN-845):	Could not load the pin information from file [/home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/drra_wrapper.fp.ptn] for partition [Silago_bot_1] because the file does not contain the complete information for any pin. Ensure that the file contains the complete information for the pins, and run the command again.
+Reading pin assignment for the partition Silago_top_2.
+**WARN: (IMPPTN-845):	Could not load the pin information from file [/home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/drra_wrapper.fp.ptn] for partition [Silago_top_2] because the file does not contain the complete information for any pin. Ensure that the file contains the complete information for the pins, and run the command again.
+Reading pin assignment for the partition Silago_top_left_corner.
+**WARN: (IMPPTN-845):	Could not load the pin information from file [/home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/drra_wrapper.fp.ptn] for partition [Silago_top_left_corner] because the file does not contain the complete information for any pin. Ensure that the file contains the complete information for the pins, and run the command again.
+Reading pin assignment for the partition Silago_top_3.
+**WARN: (IMPPTN-845):	Could not load the pin information from file [/home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/drra_wrapper.fp.ptn] for partition [Silago_top_3] because the file does not contain the complete information for any pin. Ensure that the file contains the complete information for the pins, and run the command again.
+Reading pin assignment for the partition Silago_bot_4.
+**WARN: (IMPPTN-845):	Could not load the pin information from file [/home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/drra_wrapper.fp.ptn] for partition [Silago_bot_4] because the file does not contain the complete information for any pin. Ensure that the file contains the complete information for the pins, and run the command again.
+Reading pin assignment for the partition Silago_top_right_corner.
+**WARN: (IMPPTN-845):	Could not load the pin information from file [/home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/drra_wrapper.fp.ptn] for partition [Silago_top_right_corner] because the file does not contain the complete information for any pin. Ensure that the file contains the complete information for the pins, and run the command again.
+Reading pin assignment for the partition Silago_bot_0.
+**WARN: (IMPPTN-845):	Could not load the pin information from file [/home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/drra_wrapper.fp.ptn] for partition [Silago_bot_0] because the file does not contain the complete information for any pin. Ensure that the file contains the complete information for the pins, and run the command again.
+Reading pin assignment for the partition Silago_top_1.
+**WARN: (IMPPTN-845):	Could not load the pin information from file [/home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/drra_wrapper.fp.ptn] for partition [Silago_top_1] because the file does not contain the complete information for any pin. Ensure that the file contains the complete information for the pins, and run the command again.
+Reading pin assignment for the partition Silago_top_5.
+**WARN: (IMPPTN-845):	Could not load the pin information from file [/home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/drra_wrapper.fp.ptn] for partition [Silago_top_5] because the file does not contain the complete information for any pin. Ensure that the file contains the complete information for the pins, and run the command again.
+Reading pin assignment for the partition Silago_bot_2.
+**WARN: (IMPPTN-845):	Could not load the pin information from file [/home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/drra_wrapper.fp.ptn] for partition [Silago_bot_2] because the file does not contain the complete information for any pin. Ensure that the file contains the complete information for the pins, and run the command again.
+Reading pin assignment for the partition Silago_bot_3.
+**WARN: (IMPPTN-845):	Could not load the pin information from file [/home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/drra_wrapper.fp.ptn] for partition [Silago_bot_3] because the file does not contain the complete information for any pin. Ensure that the file contains the complete information for the pins, and run the command again.
+Reading pin assignment for the partition Silago_bot_right_corner.
+**WARN: (IMPPTN-845):	Could not load the pin information from file [/home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/drra_wrapper.fp.ptn] for partition [Silago_bot_right_corner] because the file does not contain the complete information for any pin. Ensure that the file contains the complete information for the pins, and run the command again.
+Reading pin assignment for the partition Silago_bot_left_corner.
+**WARN: (IMPPTN-845):	Could not load the pin information from file [/home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/drra_wrapper.fp.ptn] for partition [Silago_bot_left_corner] because the file does not contain the complete information for any pin. Ensure that the file contains the complete information for the pins, and run the command again.
+Reading pin assignment for the partition Silago_top_0.
+**WARN: (IMPPTN-845):	Could not load the pin information from file [/home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/drra_wrapper.fp.ptn] for partition [Silago_top_0] because the file does not contain the complete information for any pin. Ensure that the file contains the complete information for the pins, and run the command again.
+Reading pin assignment for the partition Silago_top_4.
+**WARN: (IMPPTN-845):	Could not load the pin information from file [/home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/drra_wrapper.fp.ptn] for partition [Silago_top_4] because the file does not contain the complete information for any pin. Ensure that the file contains the complete information for the pins, and run the command again.
+Set (Silago_bot_inst_2_1) in fence {(430.0400000000 , 10.0000000000) (630.0320000000 , 209.6800000000)}
+Set (Silago_bot_inst_6_1) in fence {(1270.0480000000 , 10.0000000000) (1470.0400000000 , 209.6800000000)}
+Set (Silago_top_inst_5_0) in fence {(1059.9680000000 , 219.9200000000) (1259.9600000000 , 420.2400000000)}
+Set (Silago_top_l_corner_inst_0_0) in fence {(9.9840000000 , 219.9200000000) (209.9760000000 , 420.2400000000)}
+Set (Silago_top_inst_4_0) in fence {(849.9920000000 , 219.9200000000) (1049.9840000000 , 420.2400000000)}
+Set (Silago_bot_inst_3_1) in fence {(640.0160000000 , 10.0000000000) (840.0080000000 , 209.6800000000)}
+Set (Silago_top_r_corner_inst_7_0) in fence {(1480.0240000000 , 219.9200000000) (1680.0160000000 , 420.2400000000)}
+Set (Silago_bot_inst_1_1) in fence {(219.9600000000 , 10.0000000000) (419.9520000000 , 209.6800000000)}
+Set (Silago_top_inst_6_0) in fence {(1270.0480000000 , 219.9200000000) (1470.0400000000 , 420.2400000000)}
+Set (Silago_top_inst_2_0) in fence {(430.0400000000 , 219.9200000000) (630.0320000000 , 420.2400000000)}
+Set (Silago_bot_inst_5_1) in fence {(1059.9680000000 , 10.0000000000) (1259.9600000000 , 209.6800000000)}
+Set (Silago_bot_inst_4_1) in fence {(849.9920000000 , 10.0000000000) (1049.9840000000 , 209.6800000000)}
+Set (Silago_bot_r_corner_inst_7_1) in fence {(1480.0240000000 , 10.0000000000) (1680.0160000000 , 209.6800000000)}
+Set (Silago_bot_l_corner_inst_0_1) in fence {(9.9840000000 , 10.0000000000) (209.9760000000 , 209.6800000000)}
+Set (Silago_top_inst_1_0) in fence {(219.9600000000 , 219.9200000000) (419.9520000000 , 420.2400000000)}
+Set (Silago_top_inst_3_0) in fence {(640.0160000000 , 219.9200000000) (840.0080000000 , 420.2400000000)}
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Delete all existing relative floorplan constraints.
+% End Load floorplan data ... (date=01/18 07:07:39, total cpu=0:00:01.4, real=0:00:02.0, peak res=2320.7M, current mem=2319.8M)
+Reading congestion map file /home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/drra_wrapper.route.congmap.gz ...
+% Begin Load SymbolTable ... (date=01/18 07:07:39, mem=2319.9M)
+Suppress "**WARN ..." messages.
+Un-suppress "**WARN ..." messages.
+% End Load SymbolTable ... (date=01/18 07:07:41, total cpu=0:00:01.9, real=0:00:02.0, peak res=2392.5M, current mem=2392.5M)
+Loading place ...
+% Begin Load placement data ... (date=01/18 07:07:41, mem=2392.5M)
+Reading placement file - /home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/drra_wrapper.place.gz.
+** Reading stdCellPlacement_binary (Created by Innovus v21.19-s058_1 on Sat Jan 17 23:55:43 2026, version# 2) ...
+Read Views for adaptive view pruning ...
+Read 0 views from Binary DB for adaptive view pruning
+*** Completed restorePlace (cpu=0:00:01.2 real=0:00:01.0 mem=3112.6M) ***
+Total net length = 9.415e+06 (4.615e+06 4.800e+06) (ext = 3.306e+06)
+% End Load placement data ... (date=01/18 07:07:42, total cpu=0:00:01.3, real=0:00:01.0, peak res=2468.6M, current mem=2468.6M)
+Reading PG file /home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/drra_wrapper.pg.gz, version#2, (Created by Innovus v21.19-s058_1 on       Sat Jan 17 23:55:42 2026)
+*** Completed restorePGFile (cpu=0:00:00.0 real=0:00:01.0 mem=3109.6M) ***
+% Begin Load routing data ... (date=01/18 07:07:43, mem=2468.7M)
+Reading routing file - /home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/drra_wrapper.route.gz.
+Reading Innovus routing data (Created by Innovus v21.19-s058_1 on Sat Jan 17 23:55:43 2026 Format: 20.1) ...
+*** Total 634735 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:07.7 real=0:00:08.0 mem=4205.3M) ***
+% End Load routing data ... (date=01/18 07:07:51, total cpu=0:00:07.9, real=0:00:08.0, peak res=3568.3M, current mem=3564.1M)
+TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+Reading property file /home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/drra_wrapper.prop
+*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=4205.4M) ***
+add_rings command will ignore shorts while creating rings.
+add_rings command will disallow rings to go over rows.
+add_rings command will consider rows while creating rings.
+The ring targets are set to core/block ring wires.
+add_stripes will allow jog to connect padcore ring and block ring.
+
+Stripes will not extend to closest target.
+When breaking rings, the power planner will consider the existence of blocks.
+add_stripes will break automatically at non-default domains when generating global stripes over the core area or default domain.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+Stripes will not be created over regions without power planning wires.
+Offset for stripe breaking is set to 0.
+Stripes will stop at the boundary of the specified area.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+**WARN: (IMPTB-413):	Option "budget_virtual_opt_engine" of the set_db command doesn't regenerate Timing Graph, if it already exists.
+Change floorplan default-technical-site to 'SC8T_104CPP_CMOS22FDX'.
+Loading preRoute extraction data from directory '/home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/extraction/' ...
+Extraction setup Started 
+Initializing multi-corner RC extraction with 3 active RC Corners ...
+Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For post_route extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+Generating auto layer map file.
+Loading preRoute extracted patterns from file '/home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/drra_wrapper.techData.gz' ...
+Completed (cpu: 0:00:01.8 real: 0:00:02.0)
+Set Shrink Factor to 1.00000
+Summary of Active RC-Corners : 
+ 
+ Analysis View: AVF_RCWORST
+    RC-Corner Name        : rc_worst
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/libs/mmmc/rc_worst/qrcTechFile'
+ 
+ Analysis View: AVF_RCBEST
+    RC-Corner Name        : rc_best
+    RC-Corner Index       : 1
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/libs/mmmc/rc_best/qrcTechFile'
+ 
+ Analysis View: AVF_RCTYP
+    RC-Corner Name        : rc_typ
+    RC-Corner Index       : 2
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/libs/mmmc/rc_typ/qrcTechFile'
+Restored RC grid for preRoute extraction.
+Initializing multi-corner resistance tables ...
+Default value for post_route extraction mode's extract_rc_effort_level (extract_rc_effort_level option of set_db) changed to 'medium'.
+Start generating vias ..
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Via generation completed successfully.
+Generating auto layer map file.
+Initializing preRoute extraction patterns for new vias... Generating auto layer map file.
+Generating auto layer map file.
+Generating auto layer map file.
+Completed (cpu: 0:00:05.7 real: 0:00:06.0)
+% Begin Load power constraints ... (date=01/18 07:08:10, mem=3680.9M)
+source /home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/drra_wrapper_power_constraints.tcl
+% End Load power constraints ... (date=01/18 07:08:10, total cpu=0:00:00.2, real=0:00:00.0, peak res=3680.9M, current mem=3680.9M)
+WC_dc TC_dc BC_dc
+% Begin load AAE data ... (date=01/18 07:08:11, mem=3682.0M)
+AAE DB initialization (MEM=4541.39 CPU=0:00:02.8 REAL=0:00:03.0) 
+% End load AAE data ... (date=01/18 07:08:15, total cpu=0:00:04.3, real=0:00:04.0, peak res=3883.5M, current mem=3883.5M)
+Total number of combinational cells: 808
+Total number of sequential cells: 101
+Total number of tristate cells: 4
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 46
+List of usable buffers: SC8T_BUFX0P5_A_CSC28L SC8T_BUFX0P5_CSC28L SC8T_BUFX10_CSC28L SC8T_BUFX12_CSC28L SC8T_BUFX16_CSC28L SC8T_BUFX1P5_CSC28L SC8T_BUFX1_A_CSC28L SC8T_BUFX1_MR_CSC28L SC8T_BUFX1_CSC28L SC8T_BUFX20_CSC28L SC8T_BUFX24_CSC28L SC8T_BUFX2_CSC28L SC8T_BUFX3_CSC28L SC8T_BUFX4_MR_CSC28L SC8T_BUFX4_CSC28L SC8T_BUFX6_CSC28L SC8T_BUFX8_CSC28L SC8T_CKBUFX10_CSC28L SC8T_CKBUFX12_CSC28L SC8T_CKBUFX16_CSC28L SC8T_CKBUFX1_MR_CSC28L SC8T_CKBUFX1_CSC28L SC8T_CKBUFX20_CSC28L SC8T_CKBUFX24_CSC28L SC8T_CKBUFX2_CSC28L SC8T_CKBUFX4_CSC28L SC8T_CKBUFX6_CSC28L SC8T_CKBUFX8_CSC28L
+Total number of usable buffers: 28
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: SC8T_INVX0P5_CSC28L SC8T_INVX10_CSC28L SC8T_INVX12_CSC28L SC8T_INVX16_CSC28L SC8T_INVX1P5_CSC28L SC8T_INVX1_3CPP_CSC28L SC8T_INVX1_MR_CSC28L SC8T_INVX1_CSC28L SC8T_INVX20_CSC28L SC8T_INVX24_CSC28L SC8T_INVX2_CSC28L SC8T_INVX3_CSC28L SC8T_INVX4_CSC28L SC8T_INVX6_CSC28L SC8T_INVX8_CSC28L SC8T_CKINVX10_CSC28L SC8T_CKINVX12_CSC28L SC8T_CKINVX16_CSC28L SC8T_CKINVX1_MR_CSC28L SC8T_CKINVX1_CSC28L SC8T_CKINVX20_CSC28L SC8T_CKINVX24_CSC28L SC8T_CKINVX2_CSC28L SC8T_CKINVX4_CSC28L SC8T_CKINVX6_CSC28L SC8T_CKINVX8_CSC28L
+Total number of usable inverters: 26
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: SC8T_DLY100X1_CSC28L SC8T_DLY40X1_CSC28L SC8T_DLY60X1_CSC28L SC8T_DLY80X1_CSC28L
+Total number of identified usable delay cells: 4
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+#% End load design ... (date=01/18 07:08:15, total cpu=0:06:59, real=0:04:52, peak res=3884.3M, current mem=3845.6M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPLF-201          944  Pin '%s' in macro '%s' has no ANTENNADIF...
+WARNING   IMPLF-378            6  The spacing for cell edge type '%s' and ...
+WARNING   IMPPTN-845          16  Could not load the pin information from ...
+WARNING   IMPTB-413            2  Option "%s" of the set_db command doesn'...
+WARNING   NRFL-374             6  %s spacing table is not monotonically in...
+WARNING   TECHLIB-302        141  No function defined for cell '%s'. The c...
+*** Message Summary: 1116 warning(s), 0 error(s)
+
+0
+@innovus 2> gui_select -point {67.01000 378.53400}
+@innovus 3> gui_select -rect {1059.00200 -16.88000 1061.87900 -41.12900}
+@innovus 4> gui_pan 11.94600 -454.59800
+@innovus 5> report_power
+env CDS_WORKAREA is set to /home/shitongg/IL2225/SiLagoNN/phy/scr
+
+Power Net Detected:
+        Voltage	    Name
+             0V	    VSS
+          0.72V	    VDD
+Using Power View: AVF_RCWORST.
+AAE_INFO: opIsDesignInPostRouteState() is 1
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: drra_wrapper
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Extraction called for design 'drra_wrapper' of instances=600428 and nets=651343 using extraction engine 'pre_route' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command set_design_mode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+pre_route RC Extraction called for design drra_wrapper.
+RC Extraction called in multi-corner(3) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0       1       2   
+Capacitance Scaling Factor   : 1.00000 1.00000 1.00000 
+Resistance Scaling Factor    : 1.00000 1.00000 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 1.00000 1.00000 
+Clock Res. Scaling Factor    : 1.00000 1.00000 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using Quantus QRC technology file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:17.0  Real Time: 0:00:17.0  MEM: 5295.758M)
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=5790.77)
+**WARN: (IMPESI-5043):	Net clk is a highRC net with RC value of 0.00022341 and detailed analysis will be skipped for this net.
+**WARN: (IMPESI-5043):	Net rst_n is a highRC net with RC value of 0.000218226 and detailed analysis will be skipped for this net.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net addr_valid_bot[0][0]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net sel_r_seg[0][1][1][4]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net sel_r_seg[0][1][0][4]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net sel_r_seg[0][1][5][4]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net sel_r_seg[0][1][4][4]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net sel_r_seg[0][1][3][4]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net sel_r_seg[0][1][2][4]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net Silago_top_l_corner_inst_0_0/SILEGO_cell/MTRF_cell/dpu_op_control[0]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net instr_ld_bot[0][0]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net row_right[0][1][0]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net col_right[0][1][0]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net sel_r_seg[0][0][1][4]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net sel_r_seg[0][0][0][4]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net sel_r_seg[0][0][5][4]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net sel_r_seg[0][0][4][4]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net sel_r_seg[0][0][3][4]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net sel_r_seg[0][0][2][4]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net Silago_bot_l_corner_inst_0_1/SILEGO_cell/MTRF_cell/dpu_op_control[0]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net col_right[1][0][1]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+**WARN: (IMPESI-3014):	The RC network is incomplete for net col_right[1][0][0]. As a result, a lumped model will be used during delay calculation which may compromise timing accuracy. To resolve this, check parasitics for completeness, re-extraction may be required.
+Total number of fetched objects 636733
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+End delay calculation. (MEM=6801.79 CPU=0:04:40 REAL=0:04:37)
+End delay calculation (fullDC). (MEM=6801.79 CPU=0:05:28 REAL=0:05:25)
+Set Default Frequency 100MHz.
+
+Begin Power Analysis
+
+             0V	    VSS
+          0.72V	    VDD
+
+Warning:
+  There are 2 power/gnd nets that are not connected
+VSS VDD ...
+Use 'globalNetConnect' to define rail connections.
+** WARN:  (VOLTUS_POWR-2035): There are 2 power/gnd nets that are not connected
+VSS VDD ...
+Use 'globalNetConnect' to define rail connections.
+
+
+
+Begin Processing Timing Library for Power Calculation
+
+Ended Processing Timing Library for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=5611.29MB/8310.44MB/5611.29MB)
+
+
+
+Begin Processing Power Net/Grid for Power Calculation
+
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=5611.29MB/8310.44MB/5611.29MB)
+
+Begin Processing Timing Window Data for Power Calculation
+
+Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:07, real=0:00:07, mem(process/total/peak)=5614.38MB/8310.44MB/5614.38MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=5614.51MB/8310.44MB/5614.51MB)
+
+Begin Processing Signal Activity
+
+
+Starting Levelizing
+2026-Jan-18 07:26:00 (2026-Jan-18 07:26:00 GMT)
+2026-Jan-18 07:26:01 (2026-Jan-18 07:26:01 GMT): 10%
+2026-Jan-18 07:26:02 (2026-Jan-18 07:26:02 GMT): 20%
+2026-Jan-18 07:26:02 (2026-Jan-18 07:26:02 GMT): 30%
+2026-Jan-18 07:26:03 (2026-Jan-18 07:26:03 GMT): 40%
+2026-Jan-18 07:26:03 (2026-Jan-18 07:26:03 GMT): 50%
+2026-Jan-18 07:26:04 (2026-Jan-18 07:26:04 GMT): 60%
+2026-Jan-18 07:26:05 (2026-Jan-18 07:26:05 GMT): 70%
+2026-Jan-18 07:26:05 (2026-Jan-18 07:26:05 GMT): 80%
+2026-Jan-18 07:26:06 (2026-Jan-18 07:26:06 GMT): 90%
+
+Finished Levelizing
+2026-Jan-18 07:26:08 (2026-Jan-18 07:26:08 GMT)
+
+Starting Activity Propagation
+2026-Jan-18 07:26:08 (2026-Jan-18 07:26:08 GMT)
+** INFO:  (VOLTUS_POWR-1356): No default input activity has been set. Defaulting to 0.2.
+Use 'set_default_switching_activity -input_activity' command to change the default activity value.
+
+2026-Jan-18 07:26:17 (2026-Jan-18 07:26:17 GMT): 10%
+2026-Jan-18 07:26:21 (2026-Jan-18 07:26:21 GMT): 20%
+2026-Jan-18 07:26:25 (2026-Jan-18 07:26:25 GMT): 30%
+2026-Jan-18 07:26:31 (2026-Jan-18 07:26:31 GMT): 40%
+2026-Jan-18 07:26:35 (2026-Jan-18 07:26:35 GMT): 50%
+2026-Jan-18 07:26:38 (2026-Jan-18 07:26:38 GMT): 60%
+2026-Jan-18 07:26:42 (2026-Jan-18 07:26:42 GMT): 70%
+2026-Jan-18 07:26:46 (2026-Jan-18 07:26:46 GMT): 80%
+2026-Jan-18 07:26:50 (2026-Jan-18 07:26:50 GMT): 90%
+
+Finished Activity Propagation
+2026-Jan-18 07:26:52 (2026-Jan-18 07:26:52 GMT)
+Ended Processing Signal Activity: (cpu=0:00:57, real=0:00:56, mem(process/total/peak)=5653.78MB/8342.44MB/5653.78MB)
+
+Begin Power Computation
+
+      ----------------------------------------------------------
+      # of cell(s) missing both power/leakage table: 0
+      # of cell(s) missing power table: 2
+      # of cell(s) missing leakage table: 0
+      ----------------------------------------------------------
+CellName                                  Missing Table(s)
+SC8T_TIEHIX1_CSC28L                       internal power, 
+SC8T_TIELOX1_CSC28L                       internal power, 
+
+
+
+Starting Calculating power
+2026-Jan-18 07:26:53 (2026-Jan-18 07:26:53 GMT)
+ ... Calculating switching power
+  Cannot locate supply power rail for net 'noc_bus_out[0][0][BUS_ENABLE]'
+of instance Silago_top_l_corner_inst_0_0/u_bus_selector/U144
+  Cannot locate supply power rail for net
+'noc_bus_out[0][0][INSTR_CODE][1]' of instance
+Silago_top_l_corner_inst_0_0/u_bus_selector/U142
+  Cannot locate supply power rail for net
+'noc_bus_out[0][0][INSTR_CODE][0]' of instance
+Silago_top_l_corner_inst_0_0/u_bus_selector/U140
+  Cannot locate supply power rail for net
+'noc_bus_out[0][0][INSTRUCTION][59]' of instance
+Silago_top_l_corner_inst_0_0/u_bus_selector/U138
+  Cannot locate supply power rail for net
+'noc_bus_out[0][0][INSTRUCTION][58]' of instance
+Silago_top_l_corner_inst_0_0/u_bus_selector/U145
+  only first five unconnected nets are listed...
+2026-Jan-18 07:26:55 (2026-Jan-18 07:26:55 GMT): 10%
+2026-Jan-18 07:26:57 (2026-Jan-18 07:26:57 GMT): 20%
+2026-Jan-18 07:26:59 (2026-Jan-18 07:26:59 GMT): 30%
+2026-Jan-18 07:27:01 (2026-Jan-18 07:27:01 GMT): 40%
+2026-Jan-18 07:27:03 (2026-Jan-18 07:27:03 GMT): 50%
+ ... Calculating internal and leakage power
+** WARN:  (VOLTUS_POWR-2047): The following cell(s) power_level (rail net name) cannot be mapped. Check if the connections of the power/ground pin to the external rails have been specified. The power will be distributed to the default rail.
+
+POWER LEVEL         CELL                              INSTANCE
+VDD                 SC8T_NR2IAX1_CSC28L               Silago_top_l_corner_inst_0_0/u_data_selector/U66
+VDD                 SC8T_INVX1_CSC28L                 Silago_top_l_corner_inst_0_0/u_data_selector/U68
+VDD                 SC8T_AOI22X1_CSC28L               Silago_top_l_corner_inst_0_0/u_data_selector/U69
+VDD                 SC8T_NR2X1_CSC28L                 Silago_top_l_corner_inst_0_0/u_bus_selector/U19
+VDD                 SC8T_OR2X1_CSC28L                 Silago_top_l_corner_inst_0_0/u_bus_selector/U144
+VDD                 SC8T_DFFRQX1_CSC28L               Silago_top_l_corner_inst_0_0/u_addres_assign/lock_reg
+VDD                 SC8T_TIELOX1_CSC28L               Silago_top_l_corner_inst_0_0/u_addres_assign/U3
+VDD                 SC8T_DFFSQX1_CSC28L               Silago_top_l_corner_inst_0_0/SILEGO_cell/config_swb/\sel_r_int_reg[0][5] 
+VDD                 SC8T_AN2X1_CSC28L                 Silago_top_l_corner_inst_0_0/SILEGO_cell/config_swb/U2
+VDD                 SC8T_ND2X1_MR_CSC28L              Silago_top_l_corner_inst_0_0/SILEGO_cell/config_swb/U18
+2026-Jan-18 07:27:32 (2026-Jan-18 07:27:32 GMT): 60%
+2026-Jan-18 07:28:05 (2026-Jan-18 07:28:05 GMT): 70%
+2026-Jan-18 07:28:38 (2026-Jan-18 07:28:38 GMT): 80%
+2026-Jan-18 07:29:10 (2026-Jan-18 07:29:10 GMT): 90%
+
+Finished Calculating power
+2026-Jan-18 07:29:44 (2026-Jan-18 07:29:44 GMT)
+      # of MSMV cell(s) missing power_level: 0
+Ended Power Computation: (cpu=0:02:51, real=0:02:50, mem(process/total/peak)=5655.54MB/8350.44MB/5655.54MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=5655.67MB/8350.44MB/5655.67MB)
+
+Ended Power Analysis: (cpu=0:03:59, real=0:03:57, mem(process/total/peak)=5655.73MB/8350.44MB/5655.73MB)
+
+Begin Boundary Leakage Calculation
+Ended Boundary Leakage Calculation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=5655.73MB/8350.44MB/5655.73MB)
+Begin Static Power Report Generation
+*----------------------------------------------------------------------------------------
+*	Innovus 21.19-s058_1 (64bit) 04/04/2024 09:59 (Linux 3.10.0-693.el7.x86_64)
+*	
+*
+* 	Date & Time:	2026-Jan-18 07:29:44 (2026-Jan-18 07:29:44 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: drra_wrapper
+*
+*	Liberty Libraries used:
+*	        AVF_RCWORST: /home/shitongg/IL2225/SiLagoNN/phy/db/hierarchical/drra_wrapper.dat/libs/mmmc/GF22FDX_SC8T_104CPP_BASE_CSC28L_SSG_0P72V_0P00V_0P00V_0P00V_125C_ccs.lib.gz
+*
+*	Parasitic Files used:
+*
+*       Power View : AVF_RCWORST
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: N.A.
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-12 secs
+*
+*       report_power
+*
+-----------------------------------------------------------------------------------------
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        3.08293641 	   36.9356%
+Total Switching Power:       2.06927677 	   24.7913%
+Total Leakage Power:         3.19457613 	   38.2731%
+Total Power:                 8.34678931
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                         1.672       0.196        1.12       2.988       35.79
+Macro                                  0           0           0           0           0
+IO                                     0           0    1.19e-06    1.19e-06   1.426e-05
+Combinational                      1.411       1.873       2.075       5.359       64.21
+Clock (Combinational)                  0           0           0           0           0
+Clock (Sequential)                     0           0           0           0           0
+-----------------------------------------------------------------------------------------
+Total                              3.083       2.069       3.195       8.347         100
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Default                  0.72      3.083       2.069       3.195       8.347         100
+ 
+ 
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*              Highest Average Power: Silago_bot_inst_5_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_divider/division/U_DIV/u_fa_PartRem_1_1_30 (SC8T_FAX1_A_MR_CSC28L):        0.0006249
+*              Highest Leakage Power: Silago_top_l_corner_inst_0_0/SILEGO_cell/MTRF_cell/seq_gen/u_Raccu/raccu_u/sub_114/U2_6 (SC8T_XOR3X1_MR_CSC28L):        2.196e-05
+*                Total Cap:      1.90593e-09 F
+*                Total instances in design: 600428
+*                Total instances in design with no power:     0
+*                Total instances in design with no activty:     0
+
+*                Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+ 
+** INFO:  (VOLTUS_POWR-3465): There are 0 decaps and 0 fillers in the design
+
+Ended Static Power Report Generation: (cpu=0:00:10, real=0:00:09,
+mem(process/total/peak)=5776.50MB/8518.44MB/5776.50MB)
+
+1
+@innovus 6> gui_select -point {847.08000 204.79700}
+@innovus 7> report_clock_trees
+**ERROR: (IMPCCOPT-2004):	Cannot run 'report_clock_trees' as no clock trees are defined.
+
+
+@innovus 8> exit
+
+*** Memory Usage v#1 (Current mem = 6732.793M, initial mem = 494.961M) ***
+*** Message Summary: 3173 warning(s), 1 error(s)
+
+--- Ending "Innovus" (totcpu=0:28:09, real=0:33:48, mem=6732.8M) ---
